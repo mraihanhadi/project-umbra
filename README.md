@@ -13,6 +13,19 @@ Tim Kami Beranggotakan:
 - **NIM:** 103012400346  
 - **Role:** 🕹️ Game Designer  
 
+### 2️⃣ Fathan Firdaus Nuzulan 
+- **NIM:** 103012400353
+- **Role:** 🎨 Game Artist 
+
+### 3️⃣ Ganda Setya Ramadhana
+- **NIM:** 103012400278  
+- **Role:** 🕹️ Game Designer  
+
+### 4️⃣ Muhammad Raihan Hadi Pamungkas 
+- **NIM:** 103012300222
+- **Role:** 🖥️ Game Programmer 
+
+
 ---
 
 
@@ -23,7 +36,7 @@ Tim Kami Beranggotakan:
 
 ---
 
-Test
+
 
 ## 📄 Importand Links
 > Link Penting:
