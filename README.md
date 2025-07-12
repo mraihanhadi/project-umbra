@@ -25,6 +25,13 @@ Tim Kami Beranggotakan:
 - **NIM:** 103012300222
 - **Role:** 🖥️ Game Programmer 
 
+### 5️⃣ Ahmad Dillan Ramadhan 
+- **NIM:** 103022300037
+- **Role:** 🖥️ Game Programmer 
+
+### 6️⃣ Arkananta odysa
+- **NIM:** 103022400102
+- **Role:** 🖥️ Game Programmer 
 
 ---
 
