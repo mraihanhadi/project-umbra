@@ -25,6 +25,13 @@ Tim Kami Beranggotakan:
 - **NIM:** 103012300222
 - **Role:** 🖥️ Game Programmer 
 
+### 5️⃣ Ahmad Dillan Ramadhan
+- **NIM:** 103022300037
+- **Role:** 🖥️ Game Programmer 
+
+### 6️⃣ Arkananta Odysa
+- **NIM:** TBA
+- **Role:** 🖥️ Game Programmer 
 
 ---
 
@@ -48,6 +55,12 @@ https://telkomuniversityofficial-my.sharepoint.com/:wb:/g/personal/gillbrian_stu
 
 >Repository:
 https://github.com/mraihanhadi/project-umbra
+
+>Figma UI/UX: 
+https://www.figma.com/design/EGjlCVQpTj0DNUCwC3QtY7/Project-Umbra?node-id=0-1&t=HpV0y1nqJvCeJiuH-1
+
+>NPC, Item, And Event Design Spreadsheet:
+https://docs.google.com/spreadsheets/d/1aNgf7Q_IKgR7KDGAHWMj9h0qyoi9KEHV2-Zs9mMJ3M0/edit?usp=sharing
 
 ---
 
