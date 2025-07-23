@@ -2,7 +2,6 @@
 
 Welcome to the **Project Umbra**, Sebuah projek game development yang kami buat untuk 
 Internship 
-
 ---
 
 ## 👥 Kelompok Umbra
