@@ -10,23 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f4bc34eb1eb59549b3c7694dc4a9428, type: 3}
-  m_Name: MinatoTanaka
+  m_Name: TsumasuYanto
   m_EditorClassIdentifier: 
-  chosenName: Minato Tanaka
+  chosenName: Tsumasu Yanto
   Gender: Male
   rarity: 0
-  goodAlignmentChance: 70
+  goodAlignmentChance: 50
   intelligence:
-    min: 30
-    max: 40
-  strength:
-    min: 20
-    max: 30
-  charm:
     min: 10
     max: 20
+  strength:
+    min: 40
+    max: 50
+  charm:
+    min: 70
+    max: 80
   luck:
-    min: 90
-    max: 100
-  specialCharacteristic: Lucky Cat
-  characterSprite: {fileID: 3695726576825305165, guid: 02b9c829a2a923a49a0f98875cf86cb2, type: 3}
+    min: 30
+    max: 40
+  specialCharacteristic: True Chosen
+  characterSprite: {fileID: 1621373928555129994, guid: 7ee61e3ec66e82a409db7255de2ed490, type: 3}

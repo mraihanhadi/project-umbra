@@ -10,23 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f4bc34eb1eb59549b3c7694dc4a9428, type: 3}
-  m_Name: MinatoTanaka
+  m_Name: TutiTati
   m_EditorClassIdentifier: 
-  chosenName: Minato Tanaka
-  Gender: Male
+  chosenName: Tuti Tati
+  Gender: Female
   rarity: 0
-  goodAlignmentChance: 70
+  goodAlignmentChance: 0
   intelligence:
-    min: 30
-    max: 40
+    min: 60
+    max: 70
   strength:
     min: 20
     max: 30
   charm:
-    min: 10
-    max: 20
+    min: 70
+    max: 80
   luck:
-    min: 90
-    max: 100
-  specialCharacteristic: Lucky Cat
-  characterSprite: {fileID: 3695726576825305165, guid: 02b9c829a2a923a49a0f98875cf86cb2, type: 3}
+    min: 30
+    max: 40
+  specialCharacteristic: QuickLearner
+  characterSprite: {fileID: -7607820430976521780, guid: 04a88be54b54dcf489c28cfdcc0dbaa0, type: 3}

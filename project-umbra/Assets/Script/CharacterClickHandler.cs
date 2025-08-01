@@ -2,14 +2,18 @@ using UnityEngine;
 
 public class CharacterClickHandler : MonoBehaviour
 {
-    public CharacterData minatoData;
+    public CharacterData characterData;
     public CharacterProfile profile;
     public GameObject profileUI;
 
-    public void showProfile()
+    void Start()
+    {
+        GetComponent<SpriteRenderer>().sprite = characterData.characterSprite;
+    }
+    private void OnMouseDown()
     {
         profileUI.SetActive(true);
-        CharacterInstance characterInstance = new CharacterInstance(minatoData);
+        CharacterInstance characterInstance = new CharacterInstance(characterData);
         profile.DisplayCharacter(characterInstance);
     }
 }

@@ -6,12 +6,18 @@ public enum AlignmentType
     Evil
 }
 
+public enum Rarity
+{
+    Common,
+    Rare
+}
+
 [CreateAssetMenu(fileName = "NewCharacter", menuName = "Characters/Character Data")]
 public class CharacterData : ScriptableObject
 {
     public string chosenName;
     public string Gender;
-    public string rarity;
+    public Rarity rarity;
     public int goodAlignmentChance = 50; //example: means 50% good
     public Stats intelligence;
     public Stats strength;

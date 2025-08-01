@@ -28,9 +28,14 @@ public class CharacterProfile : MonoBehaviour
     {
         if (currentInstance != null)
         {
-            GameManager.Instance.characterManager.allChosen.Add(currentInstance);
+            GameManager.Instance.characterManager.AddChosen(currentInstance);
             Debug.Log($"Sent character: {currentInstance} to CharacterManager");
         }
+        SceneManager.LoadSceneAsync(1);
+    }
+
+    public void GoBack()
+    {
         SceneManager.LoadSceneAsync(1);
     }
 }

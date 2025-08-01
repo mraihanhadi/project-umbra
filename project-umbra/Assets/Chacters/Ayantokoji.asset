@@ -10,23 +10,23 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 6f4bc34eb1eb59549b3c7694dc4a9428, type: 3}
-  m_Name: MinatoTanaka
+  m_Name: Ayantokoji
   m_EditorClassIdentifier: 
-  chosenName: Minato Tanaka
+  chosenName: Ayanto Koji
   Gender: Male
-  rarity: 0
-  goodAlignmentChance: 70
+  rarity: 1
+  goodAlignmentChance: 0
   intelligence:
-    min: 30
-    max: 40
-  strength:
-    min: 20
-    max: 30
-  charm:
-    min: 10
-    max: 20
-  luck:
-    min: 90
+    min: 100
     max: 100
-  specialCharacteristic: Lucky Cat
-  characterSprite: {fileID: 3695726576825305165, guid: 02b9c829a2a923a49a0f98875cf86cb2, type: 3}
+  strength:
+    min: 5
+    max: 5
+  charm:
+    min: 95
+    max: 95
+  luck:
+    min: 0
+    max: 0
+  specialCharacteristic: God Complex
+  characterSprite: {fileID: 495456059651229704, guid: f0d11c3de3252614bb029feb21bbc97c, type: 3}

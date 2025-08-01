@@ -1,13 +1,24 @@
 using System.Collections.Generic;
+using System.Data.Common;
+using System.Linq;
 using UnityEngine;
 
 public class CharacterManager : MonoBehaviour
 {
-    public List<CharacterInstance> allChosen = new List<CharacterInstance>();
+    public List<CharacterData> sentChosen = new List<CharacterData>();
+    public List<CharacterInstance> sentChosenInstance = new List<CharacterInstance>();
 
-    public void AddChosen(CharacterData baseData)
+    public void AddChosen(CharacterInstance instance)
     {
-        CharacterInstance newChosen = new CharacterInstance(baseData);
-        allChosen.Add(newChosen);
+        if (!sentChosen.Any(c => c.chosenName == instance.Name))
+        {
+            sentChosen.Add(instance.baseData);
+            sentChosenInstance.Add(instance);
+        }
+    }
+
+    public bool IsChosenSent(string name)
+    {
+        return sentChosen.Any(c => c.chosenName == name);
     }
 }

@@ -24,7 +24,7 @@ public class CharacterInstance
 
     public string Name => baseData.chosenName;
     public Sprite Sprite => baseData.characterSprite;
-    public string Rarity => baseData.rarity;
+    public Rarity Rarity => baseData.rarity;
     public string Special => baseData.specialCharacteristic;
     public string Gender => baseData.Gender;
 }
