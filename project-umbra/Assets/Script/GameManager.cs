@@ -1,9 +1,10 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
     public static GameManager Instance;
+    public TimeManager timeManager;
     public CharacterManager characterManager;
     private void Awake()
     {

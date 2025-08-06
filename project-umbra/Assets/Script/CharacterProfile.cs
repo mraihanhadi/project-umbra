@@ -31,11 +31,13 @@ public class CharacterProfile : MonoBehaviour
             GameManager.Instance.characterManager.AddChosen(currentInstance);
             Debug.Log($"Sent character: {currentInstance} to CharacterManager");
         }
+        GameManager.Instance.timeManager.isPaused = false;
         SceneManager.LoadSceneAsync(1);
     }
 
     public void GoBack()
     {
+        GameManager.Instance.timeManager.isPaused = false;
         SceneManager.LoadSceneAsync(1);
     }
 }

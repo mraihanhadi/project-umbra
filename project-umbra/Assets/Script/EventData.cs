@@ -1,0 +1,35 @@
+using UnityEngine;
+
+[CreateAssetMenu(fileName = "NewEvent", menuName = "Event/Event Data")]
+public class EventData : ScriptableObject
+{
+    public string IDEvent;
+    public string namaEvent;
+    public string jenisEvent;
+    [Header("Minimal Attributes")]
+    public int yearInMarblesMin;
+    public float intelligenceMin;
+    public float strengthMin;
+    public float charmMin;
+    public float luckMin;
+    [Header("Chance (%) Per Month")]
+    public float goodAligned;
+    public float evilAligned;
+    [Header("Reward")]
+    public float intelligenceReward;
+    public float strengthReward;
+    public float charmReward;
+    public float luckReward;
+    [Header("Punishment")]
+    public float intelligencePunishment;
+    public float strengthPunishment;
+    public float charmPunishment;
+    public float luckPunishment;
+    [Header("Encounter Hidden Attribute")]
+    public float intelligenceHidden;
+    public float strengthHidden;
+    public float charmHidden;
+    public float luckHidden;
+    [Space]
+    public bool repeatable;
+}

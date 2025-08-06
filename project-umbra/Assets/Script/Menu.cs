@@ -1,4 +1,3 @@
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class MenuOpener : MonoBehaviour
@@ -50,12 +49,14 @@ public class MenuOpener : MonoBehaviour
     {
         mainView.SetActive(false);
         menu.SetActive(true);
+        GameManager.Instance.timeManager.isPaused = true;
     }
 
     public void CloseMenu()
     {
         mainView.SetActive(true);
         menu.SetActive(false);
+        GameManager.Instance.timeManager.isPaused = false;
     }
 
     void BackToMenu()
