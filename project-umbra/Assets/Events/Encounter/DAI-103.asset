@@ -12,26 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8b3e4668ee9e10449c44cda5bf9416b, type: 3}
   m_Name: DAI-103
   m_EditorClassIdentifier: 
-  IDEvent: DAI-101
-  namaEvent: A Meeting With A Goblin
+  IDEvent: DAI-103
+  namaEvent: A Meeting with A Magic Merchant
   jenisEvent: Encounter
   yearInMarblesMin: 1
   intelligenceMin: 0
   strengthMin: 0
   charmMin: 0
   luckMin: 0
-  goodAligned: 20
-  evilAligned: 20
-  intelligenceReward: 0
-  strengthReward: 1
+  goodAligned: 15
+  evilAligned: 15
+  intelligenceReward: 1
+  strengthReward: 0
   charmReward: 0
   luckReward: 0
   intelligencePunishment: 0
   strengthPunishment: 0
   charmPunishment: 0
   luckPunishment: 0
-  intelligenceHidden: 5
-  strengthHidden: 30
-  charmHidden: 0
+  intelligenceHidden: 20
+  strengthHidden: 0
+  charmHidden: 30
   luckHidden: 0
   repeatable: 1

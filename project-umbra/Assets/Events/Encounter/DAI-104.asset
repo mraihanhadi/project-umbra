@@ -12,26 +12,26 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8b3e4668ee9e10449c44cda5bf9416b, type: 3}
   m_Name: DAI-104
   m_EditorClassIdentifier: 
-  IDEvent: DAI-101
-  namaEvent: A Meeting With A Goblin
+  IDEvent: DAI-104
+  namaEvent: A Meeting With A Group Of YNs Shooting Dice
   jenisEvent: Encounter
   yearInMarblesMin: 1
   intelligenceMin: 0
   strengthMin: 0
   charmMin: 0
   luckMin: 0
-  goodAligned: 20
-  evilAligned: 20
+  goodAligned: 5
+  evilAligned: 5
   intelligenceReward: 0
-  strengthReward: 1
+  strengthReward: 0
   charmReward: 0
-  luckReward: 0
+  luckReward: 3
   intelligencePunishment: 0
-  strengthPunishment: 0
+  strengthPunishment: 1
   charmPunishment: 0
   luckPunishment: 0
-  intelligenceHidden: 5
-  strengthHidden: 30
+  intelligenceHidden: 0
+  strengthHidden: 0
   charmHidden: 0
-  luckHidden: 0
+  luckHidden: 50
   repeatable: 1

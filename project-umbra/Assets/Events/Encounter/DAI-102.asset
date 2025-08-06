@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8b3e4668ee9e10449c44cda5bf9416b, type: 3}
   m_Name: DAI-102
   m_EditorClassIdentifier: 
-  IDEvent: DAI-101
-  namaEvent: A Meeting With A Goblin
+  IDEvent: DAI-102
+  namaEvent: A Meeting With A Wounded Traveller
   jenisEvent: Encounter
   yearInMarblesMin: 1
   intelligenceMin: 0
@@ -23,15 +23,15 @@ MonoBehaviour:
   goodAligned: 20
   evilAligned: 20
   intelligenceReward: 0
-  strengthReward: 1
-  charmReward: 0
+  strengthReward: 0
+  charmReward: 1
   luckReward: 0
   intelligencePunishment: 0
   strengthPunishment: 0
-  charmPunishment: 0
+  charmPunishment: 1
   luckPunishment: 0
-  intelligenceHidden: 5
-  strengthHidden: 30
+  intelligenceHidden: 45
+  strengthHidden: 0
   charmHidden: 0
   luckHidden: 0
   repeatable: 1
