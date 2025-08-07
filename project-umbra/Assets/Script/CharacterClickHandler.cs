@@ -3,7 +3,7 @@ using UnityEngine;
 public class CharacterClickHandler : MonoBehaviour
 {
     public CharacterData characterData;
-    public CharacterProfile profile;
+    public EarthManager profile;
     public GameObject profileUI;
 
     void Start()

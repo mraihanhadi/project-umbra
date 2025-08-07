@@ -4,6 +4,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+[SerializeField]
 public class EventManager : MonoBehaviour
 {
     public CharacterManager characterManager;

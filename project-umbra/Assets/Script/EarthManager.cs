@@ -2,7 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
-public class CharacterProfile : MonoBehaviour
+public class EarthManager : MonoBehaviour
 {
     public Image npcImage;
     public TextMeshProUGUI infoText;

@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 
 [System.Serializable]
@@ -27,4 +28,6 @@ public class CharacterInstance
     public Rarity Rarity => baseData.rarity;
     public string Special => baseData.specialCharacteristic;
     public string Gender => baseData.Gender;
+    public List<string> triggeredEventIDs = new List<string>();
+
 }

@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f8b3e4668ee9e10449c44cda5bf9416b, type: 3}
-  m_Name: DAI-104
+  m_Name: DAI-106
   m_EditorClassIdentifier: 
-  IDEvent: DAI-104
-  namaEvent: A Meeting With A Group Of YNs Shooting Dice
+  IDEvent: DAI-106
+  namaEvent: A Meeting With A Talking Tree
   jenisEvent: Encounter
   yearInMarblesMin: 1
   intelligenceMin: 0
@@ -22,18 +22,19 @@ MonoBehaviour:
   luckMin: 0
   goodAligned: 5
   evilAligned: 5
-  intelligenceReward: 0
+  intelligenceReward: 1
   strengthReward: 0
   charmReward: 0
-  luckReward: 3
-  intelligencePunishment: 0
-  strengthPunishment: 1
+  luckReward: 0
+  intelligencePunishment: 1
+  strengthPunishment: 0
   charmPunishment: 0
   luckPunishment: 0
-  intelligenceHidden: 0
+  intelligenceHidden: 25
   strengthHidden: 0
   charmHidden: 0
-  luckHidden: 50
-  winDescription: Chosen Ikut dan Berhasil Menang Beberapa  ronde
-  loseDescription: Chosen Tidak tau cara main dan Berakhir dengan para YNs Crashout
-  repeatable: 1
+  luckHidden: 0
+  winDescription: Chosen Berhasil Memecahkan Teka-teki Tersebut
+  loseDescription: Chosen Gagal memecahkan teka-teki tersebut dan pohon itu  akan
+    menguras energi mental kita
+  repeatable: 0

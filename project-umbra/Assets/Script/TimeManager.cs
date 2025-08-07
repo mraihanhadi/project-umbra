@@ -2,6 +2,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.SceneManagement;
 
+[SerializeField]
 public class TimeManager : MonoBehaviour
 {
     public TextMeshProUGUI timeUIText;
@@ -14,6 +15,7 @@ public class TimeManager : MonoBehaviour
     private float moons = 0f;
     private float speedMultiplier = 1f;
     private float timer = 0f;
+    [SerializeField]
     private bool isFastForward = false;
     private bool eventJustTriggered = false;
 
@@ -101,11 +103,13 @@ public class TimeManager : MonoBehaviour
         {
             foreach (var e in eventManager.allEvents)
             {
+                if (!e.repeatable && character.triggeredEventIDs.Contains(e.IDEvent)) continue;
                 if (suns < e.yearInMarblesMin) continue;
                 if (character.intelligence < e.intelligenceMin || character.strength < e.strengthMin || character.charm < e.charmMin || character.luck < e.luckMin) continue;
                 float chance = (character.alignment == AlignmentType.Good) ? e.goodAligned : e.evilAligned;
                 float roll = Random.Range(0f, 100f);
                 if (roll > chance) continue;
+                character.triggeredEventIDs.Add(e.IDEvent);
                 eventManager.TriggerEvents(e.IDEvent, character.Name);
                 eventJustTriggered = true;
                 return;

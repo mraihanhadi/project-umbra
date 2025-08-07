@@ -9,7 +9,7 @@ public class CharacterSpawnHandler : MonoBehaviour
     public List<RarityChance> rarityChances;
 
     public GameObject profileUI;
-    public CharacterProfile profileScript;
+    public EarthManager profileScript;
 
     private GameObject currentCharacter;
     private CharacterManager characterManager;
