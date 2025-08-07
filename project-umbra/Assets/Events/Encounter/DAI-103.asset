@@ -34,4 +34,6 @@ MonoBehaviour:
   strengthHidden: 0
   charmHidden: 30
   luckHidden: 0
+  winDescription: Chosen Berhasil Membeli Scroll Of Magic
+  loseDescription: Chosen tidak membeli apa apa
   repeatable: 1

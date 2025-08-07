@@ -1,12 +1,48 @@
 using System;
 using System.Linq;
+using TMPro;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class EventManager : MonoBehaviour
 {
     public CharacterManager characterManager;
     [Header("All Event Data")]
     public EventData[] allEvents;
+    public GameObject eventPanel;
+    public TextMeshProUGUI judulEvent;
+    public TextMeshProUGUI deskripsiEvent;
+    public TimeManager timeManager;
+
+    void OnEnable()
+    {
+        SceneManager.sceneLoaded += OnSceneLoaded;
+    }
+
+    void OnDisable()
+    {
+        SceneManager.sceneLoaded -= OnSceneLoaded;
+    }
+
+    void OnSceneLoaded(Scene scene, LoadSceneMode mode)
+    {
+        GameObject[] allObjects = Resources.FindObjectsOfTypeAll<GameObject>();
+        eventPanel = allObjects.FirstOrDefault(go => go.name == "EventPanel");
+        GameObject foundUIJudul = allObjects.FirstOrDefault(go => go.name == "Judul");
+        GameObject foundUIDeskripsi = allObjects.FirstOrDefault(go => go.name == "Deskripsi");
+        if (eventPanel != null || foundUIJudul != null || foundUIDeskripsi != null)
+        {
+            judulEvent = foundUIJudul.GetComponent<TextMeshProUGUI>();
+            deskripsiEvent = foundUIDeskripsi.GetComponent<TextMeshProUGUI>();
+        }
+        else
+        {
+            Debug.Log("Event component not found");
+            eventPanel = null;
+            judulEvent = null;
+            deskripsiEvent = null;
+        }
+    }
 
     public void TestTriggerEvents()
     {
@@ -40,11 +76,14 @@ public class EventManager : MonoBehaviour
             Debug.LogWarning($"Event {eventID} not found.");
             return;
         }
-
+        eventPanel.SetActive(true);
+        judulEvent.text = eventData.namaEvent;
+        deskripsiEvent.text = eventData.winDescription;
         charEvent.intelligence += eventData.intelligenceReward;
         charEvent.strength += eventData.strengthReward;
         charEvent.charm += eventData.charmReward;
         charEvent.luck += eventData.luckReward;
+        timeManager.PauseTime();
 
         Debug.Log($"Applied event {eventData.namaEvent} to character {charEvent.Name}");
     }

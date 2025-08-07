@@ -34,4 +34,6 @@ MonoBehaviour:
   strengthHidden: 0
   charmHidden: 0
   luckHidden: 0
+  winDescription: Chosen Berhasil Mengobati Traveller
+  loseDescription: '"Chosen Gagal Mengobati Traveller dan dia meninggal "'
   repeatable: 1

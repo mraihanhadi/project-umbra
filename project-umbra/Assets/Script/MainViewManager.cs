@@ -1,9 +1,10 @@
 using UnityEngine;
 
-public class MenuOpener : MonoBehaviour
+public class MainViewManager : MonoBehaviour
 {
     public GameObject menu;
     public GameObject mainView;
+    public GameObject eventPanel;
     GameObject menuBtn;
     GameObject saveMenu;
     GameObject loadMenu;
@@ -49,14 +50,14 @@ public class MenuOpener : MonoBehaviour
     {
         mainView.SetActive(false);
         menu.SetActive(true);
-        GameManager.Instance.timeManager.isPaused = true;
+        GameManager.Instance.timeManager.PauseTime();
     }
 
     public void CloseMenu()
     {
         mainView.SetActive(true);
         menu.SetActive(false);
-        GameManager.Instance.timeManager.isPaused = false;
+        GameManager.Instance.timeManager.ResumeTime();
     }
 
     void BackToMenu()
@@ -87,5 +88,11 @@ public class MenuOpener : MonoBehaviour
         menuBtn.SetActive(false);
         settingsMenu.SetActive(true);
         mainView.SetActive(true);
+    }
+
+    public void CloseEvent()
+    {
+        eventPanel.SetActive(false);
+        GameManager.Instance.timeManager.ResumeTime();
     }
 }

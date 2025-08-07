@@ -30,6 +30,9 @@ public class EventData : ScriptableObject
     public float strengthHidden;
     public float charmHidden;
     public float luckHidden;
+    [Header("Outcome Description")]
+    public string winDescription;
+    public string loseDescription;
     [Space]
     public bool repeatable;
 }

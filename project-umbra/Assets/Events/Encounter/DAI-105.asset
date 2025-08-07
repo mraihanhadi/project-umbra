@@ -34,4 +34,6 @@ MonoBehaviour:
   strengthHidden: 0
   charmHidden: 0
   luckHidden: 0
+  winDescription: Chosen Berhasil Memecahkan Puzzle Tersebut
+  loseDescription: Chosen Gagal memecahkan puzzle tersebut dan memicu sebuah jebakan
   repeatable: 0

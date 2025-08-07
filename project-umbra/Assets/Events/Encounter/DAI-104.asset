@@ -34,4 +34,6 @@ MonoBehaviour:
   strengthHidden: 0
   charmHidden: 0
   luckHidden: 50
+  winDescription: Chosen Ikut dan Berhasil Menang Beberapa  ronde"
+  loseDescription: Chosen Tidak tau cara main dan Berakhir dengan para YNs Crashout
   repeatable: 1

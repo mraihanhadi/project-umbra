@@ -8,12 +8,14 @@ public class TimeManager : MonoBehaviour
     public bool isPaused;
     public float moonsPerSun = 12f;
     public float moonInterval = 2f;
+    public EventManager eventManager;
     private float suns = 0f;
     [SerializeField]
     private float moons = 0f;
     private float speedMultiplier = 1f;
     private float timer = 0f;
     private bool isFastForward = false;
+    private bool eventJustTriggered = false;
 
     void OnEnable()
     {
@@ -55,6 +57,7 @@ public class TimeManager : MonoBehaviour
                 suns++;
             }
             UpdateTimeUI();
+            TryTriggerEventsForAllCharacters();
         }
     }
 
@@ -74,6 +77,7 @@ public class TimeManager : MonoBehaviour
     public void ResumeTime()
     {
         isPaused = false;
+        eventJustTriggered = false;
     }
 
     public void FastForwardTime()
@@ -88,5 +92,25 @@ public class TimeManager : MonoBehaviour
             speedMultiplier = 2f;
             isFastForward = true;
         }
+    }
+
+    void TryTriggerEventsForAllCharacters()
+    {
+        if (eventJustTriggered) return;
+        foreach (var character in eventManager.characterManager.sentChosenInstance)
+        {
+            foreach (var e in eventManager.allEvents)
+            {
+                if (suns < e.yearInMarblesMin) continue;
+                if (character.intelligence < e.intelligenceMin || character.strength < e.strengthMin || character.charm < e.charmMin || character.luck < e.luckMin) continue;
+                float chance = (character.alignment == AlignmentType.Good) ? e.goodAligned : e.evilAligned;
+                float roll = Random.Range(0f, 100f);
+                if (roll > chance) continue;
+                eventManager.TriggerEvents(e.IDEvent, character.Name);
+                eventJustTriggered = true;
+                return;
+            }
+        }
+        if (eventManager.characterManager.sentChosenInstance == null) Debug.Log("Tidak ada character");
     }
 }

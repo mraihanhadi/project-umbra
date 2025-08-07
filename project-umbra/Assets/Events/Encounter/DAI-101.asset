@@ -34,4 +34,6 @@ MonoBehaviour:
   strengthHidden: 30
   charmHidden: 0
   luckHidden: 0
+  winDescription: Chosen Berhasil Mengalahkan Goblin tersebut
+  loseDescription: Chosen Lari saat bertemu Goblin
   repeatable: 1
