@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f4bc34eb1eb59549b3c7694dc4a9428, type: 3}
+  m_Name: SetoriGweh
+  m_EditorClassIdentifier: 
+  chosenName: Setori Gweh
+  Gender: Male
+  rarity: 0
+  goodAlignmentChance: 50
+  intelligence:
+    min: 20
+    max: 30
+  strength:
+    min: 40
+    max: 50
+  charm:
+    min: 40
+    max: 50
+  luck:
+    min: 60
+    max: 70
+  specialCharacteristic: True Chosen
+  characterSprite: {fileID: 1550746193010043188, guid: 0677090dfa28b434d90b84473369777d, type: 3}

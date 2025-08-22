@@ -1,4 +1,3 @@
-using Microsoft.Unity.VisualStudio.Editor;
 using UnityEngine;
 using DG.Tweening;
 using TMPro;
@@ -10,6 +9,7 @@ public class ClickedPlanet : MonoBehaviour
     public TextMeshProUGUI namaPlanet;
     private float dunia1Origin;
     private float dunia2Origin;
+    private bool isDunia1;
     public void Start()
     {
         dunia1Origin = dunia1.anchoredPosition.x;
@@ -23,6 +23,7 @@ public class ClickedPlanet : MonoBehaviour
         seq.Append(dunia1.DOSizeDelta(new Vector2(400f, 80f), 1f).SetEase(Ease.InOutQuart));
         namaPlanet.text = "EARTH";
         seq.Append(namaPlanet.DOFade(1f, 1f));
+        isDunia1 = true;
     }
     public void Dunia2Clicked()
     {
@@ -32,5 +33,25 @@ public class ClickedPlanet : MonoBehaviour
         seq.Append(dunia2.DOSizeDelta(new Vector2(400f, 80f), 1f).SetEase(Ease.InOutQuart));
         namaPlanet.text = "THE MYTHTERRA";
         seq.Append(namaPlanet.DOFade(1f, 1f));
+        isDunia1 = false;
+    }
+    public void GoBack()
+    {
+        if (isDunia1)
+        {
+            namaPlanet.DOFade(0f, 0.3f);
+            dunia1.DOSizeDelta(new Vector2(250f, 50f), 1f).SetEase(Ease.InOutQuart);
+            Sequence seq = DOTween.Sequence();
+            seq.Append(dunia1.DOAnchorPosX(dunia1Origin, 1f).SetEase(Ease.InOutQuart));
+            dunia2.DOAnchorPosX(dunia2Origin, 1f).SetEase(Ease.InOutQuart);
+        }
+        else
+        {
+            namaPlanet.DOFade(0f, 0.3f);
+            dunia2.DOSizeDelta(new Vector2(250f, 50f), 1f).SetEase(Ease.InOutQuart);
+            Sequence seq = DOTween.Sequence();
+            seq.Append(dunia2.DOAnchorPosX(dunia2Origin, 1f).SetEase(Ease.InOutQuart));
+            dunia1.DOAnchorPosX(dunia1Origin, 1f).SetEase(Ease.InOutQuart);
+        }
     }
 }

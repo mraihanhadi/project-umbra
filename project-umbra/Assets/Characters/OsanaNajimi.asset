@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f4bc34eb1eb59549b3c7694dc4a9428, type: 3}
+  m_Name: OsanaNajimi
+  m_EditorClassIdentifier: 
+  chosenName: OsanaNajimi
+  Gender: Female
+  rarity: 0
+  goodAlignmentChance: 60
+  intelligence:
+    min: 70
+    max: 70
+  strength:
+    min: 80
+    max: 80
+  charm:
+    min: 75
+    max: 75
+  luck:
+    min: 50
+    max: 50
+  specialCharacteristic: Jack Of All Trade
+  characterSprite: {fileID: -3400263231217397214, guid: a7620ae4292bdcd4a9a9876e03e23ac2, type: 3}

@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f4bc34eb1eb59549b3c7694dc4a9428, type: 3}
+  m_Name: MaiKisah
+  m_EditorClassIdentifier: 
+  chosenName: Mai Kisah
+  Gender: Female
+  rarity: 0
+  goodAlignmentChance: 30
+  intelligence:
+    min: 40
+    max: 50
+  strength:
+    min: 20
+    max: 30
+  charm:
+    min: 80
+    max: 90
+  luck:
+    min: 70
+    max: 80
+  specialCharacteristic: Black Widow
+  characterSprite: {fileID: 3460207762087898781, guid: 437c5e1596ef6e04495e635c9cea1a96, type: 3}
