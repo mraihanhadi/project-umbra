@@ -12,29 +12,31 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8b3e4668ee9e10449c44cda5bf9416b, type: 3}
   m_Name: DAI-201
   m_EditorClassIdentifier: 
-  IDEvent: 
-  namaEvent: 
-  jenisEvent: 
+  IDEvent: DAI-201
+  namaEvent: An Encounter With A Camp of Bandits Arguing  Over Loot
+  jenisEvent: Encounter
   jobRequirement: 0
-  yearInMarblesMin: 0
+  yearInMarblesMin: 2
   intelligenceMin: 0
   strengthMin: 0
   charmMin: 0
   luckMin: 0
-  goodAligned: 0
-  evilAligned: 0
+  goodAligned: 10
+  evilAligned: 10
   intelligenceReward: 0
   strengthReward: 0
-  charmReward: 0
+  charmReward: 1
   luckReward: 0
   intelligencePunishment: 0
   strengthPunishment: 0
   charmPunishment: 0
-  luckPunishment: 0
+  luckPunishment: 1
   intelligenceHidden: 0
   strengthHidden: 0
-  charmHidden: 0
+  charmHidden: 50
   luckHidden: 0
-  winDescription: 
-  loseDescription: 
-  repeatable: 0
+  winDescription: Chosen berhasil bernegosiasi dengan para bandit  dan mendapatkan
+    barang rampasan
+  loseDescription: Negosiasi gagal dan para bandit mengejar Chosen sehingga Chosen 
+    harus kabur
+  repeatable: 1

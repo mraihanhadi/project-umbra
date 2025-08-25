@@ -12,29 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8b3e4668ee9e10449c44cda5bf9416b, type: 3}
   m_Name: DAI-203
   m_EditorClassIdentifier: 
-  IDEvent: 
-  namaEvent: 
-  jenisEvent: 
+  IDEvent: DAI-203
+  namaEvent: A Meeting With A Ghost Asking for Help
+  jenisEvent: Encounter
   jobRequirement: 0
-  yearInMarblesMin: 0
+  yearInMarblesMin: 2
   intelligenceMin: 0
   strengthMin: 0
   charmMin: 0
   luckMin: 0
-  goodAligned: 0
-  evilAligned: 0
-  intelligenceReward: 0
+  goodAligned: 10
+  evilAligned: 10
+  intelligenceReward: 1
   strengthReward: 0
   charmReward: 0
   luckReward: 0
   intelligencePunishment: 0
-  strengthPunishment: 0
+  strengthPunishment: 1
   charmPunishment: 0
   luckPunishment: 0
-  intelligenceHidden: 0
+  intelligenceHidden: 40
   strengthHidden: 0
   charmHidden: 0
   luckHidden: 0
-  winDescription: 
-  loseDescription: 
-  repeatable: 0
+  winDescription: Chosen membimbing roh ke alam baka dengan mantera
+  loseDescription: Mantera Chosen gagal dan roh tersebut menguras energi Chosen 
+    sebelum menghilang
+  repeatable: 1
