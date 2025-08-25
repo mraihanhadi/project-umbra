@@ -12,29 +12,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8b3e4668ee9e10449c44cda5bf9416b, type: 3}
   m_Name: DAI-404
   m_EditorClassIdentifier: 
-  IDEvent: 
-  namaEvent: 
-  jenisEvent: 
+  IDEvent: DAI-404
+  namaEvent: An Encounter With A Haunting Melody
+  jenisEvent: Encounter
   jobRequirement: 0
-  yearInMarblesMin: 0
+  yearInMarblesMin: 4
   intelligenceMin: 0
   strengthMin: 0
   charmMin: 0
   luckMin: 0
-  goodAligned: 0
-  evilAligned: 0
-  intelligenceReward: 0
+  goodAligned: 10
+  evilAligned: 10
+  intelligenceReward: 2
   strengthReward: 0
   charmReward: 0
   luckReward: 0
-  intelligencePunishment: 0
+  intelligencePunishment: 2
   strengthPunishment: 0
   charmPunishment: 0
   luckPunishment: 0
-  intelligenceHidden: 0
+  intelligenceHidden: 60
   strengthHidden: 0
   charmHidden: 0
   luckHidden: 0
-  winDescription: 
-  loseDescription: 
-  repeatable: 0
+  winDescription: Chosen mengungkap makna lagu misterius tersebut,  menambah wawasan
+  loseDescription: Nada tersebut merasuki pikiran Chosen dan membuatnya gelisah
+  repeatable: 1

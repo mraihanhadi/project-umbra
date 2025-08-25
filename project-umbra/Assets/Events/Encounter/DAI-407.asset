@@ -12,29 +12,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8b3e4668ee9e10449c44cda5bf9416b, type: 3}
   m_Name: DAI-407
   m_EditorClassIdentifier: 
-  IDEvent: 
-  namaEvent: 
-  jenisEvent: 
+  IDEvent: DAI-407
+  namaEvent: An Encounter With A Crumbling Fortress
+  jenisEvent: Encounter
   jobRequirement: 0
-  yearInMarblesMin: 0
+  yearInMarblesMin: 4
   intelligenceMin: 0
   strengthMin: 0
   charmMin: 0
   luckMin: 0
-  goodAligned: 0
-  evilAligned: 0
+  goodAligned: 5
+  evilAligned: 5
   intelligenceReward: 0
-  strengthReward: 0
+  strengthReward: 2
   charmReward: 0
   luckReward: 0
   intelligencePunishment: 0
-  strengthPunishment: 0
+  strengthPunishment: 2
   charmPunishment: 0
   luckPunishment: 0
   intelligenceHidden: 0
-  strengthHidden: 0
+  strengthHidden: 75
   charmHidden: 0
   luckHidden: 0
-  winDescription: 
-  loseDescription: 
-  repeatable: 0
+  winDescription: Chosen menjelajah dengan hati-hati dan mendapatkan  harta karun
+    serta pengetahuan terdahulu
+  loseDescription: Benteng tersebut runduh, mengubur Chosen di bawah bebatuan
+  repeatable: 1
