@@ -1,11 +1,28 @@
 using UnityEngine;
 
+public enum Jobs
+{
+    None,
+    Courier,
+    Merchant,
+    BladeForHire,
+    Spy,
+    Chef,
+    Advisor,
+    Hero,
+    Charlatan,
+    Witch,
+    DreadPrince
+}
+
 [CreateAssetMenu(fileName = "NewEvent", menuName = "Event/Event Data")]
 public class EventData : ScriptableObject
 {
     public string IDEvent;
     public string namaEvent;
     public string jenisEvent;
+    [Header("Jobs Requirement")]
+    public Jobs jobRequirement;
     [Header("Minimal Attributes")]
     public int yearInMarblesMin;
     public float intelligenceMin;
