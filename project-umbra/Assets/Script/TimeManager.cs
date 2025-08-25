@@ -8,7 +8,7 @@ public class TimeManager : MonoBehaviour
     public TextMeshProUGUI timeUIText;
     public bool isPaused;
     public float moonsPerSun = 12f;
-    public float moonInterval = 2f;
+    public float moonInterval = 12f;
     public EventManager eventManager;
     private float suns = 0f;
     [SerializeField]
@@ -53,6 +53,7 @@ public class TimeManager : MonoBehaviour
         {
             timer -= moonInterval;
             moons++;
+            GameManager.Instance.currencyManager.IncreaseDivinePower();
             if (moons >= moonsPerSun)
             {
                 moons = 0;

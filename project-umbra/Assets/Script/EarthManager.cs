@@ -6,7 +6,14 @@ public class EarthManager : MonoBehaviour
 {
     public Image npcImage;
     public TextMeshProUGUI infoText;
+    public int divinePowerCost = 100;
     private CharacterInstance currentInstance;
+    private GameManager gameManagerInstance;
+
+    void Start()
+    {
+        gameManagerInstance = GameManager.Instance;
+    }
     public void DisplayCharacter(CharacterInstance character)
     {
         currentInstance = character;
@@ -26,13 +33,20 @@ public class EarthManager : MonoBehaviour
 
     public void SendCharacter()
     {
-        if (currentInstance != null)
+        if (gameManagerInstance.currencyManager.divinePower >= divinePowerCost)
         {
-            GameManager.Instance.characterManager.AddChosen(currentInstance);
-            Debug.Log($"Sent character: {currentInstance} to CharacterManager");
+            gameManagerInstance.currencyManager.DecreaseDivinePower(divinePowerCost);
+            if (currentInstance != null)
+            {
+                GameManager.Instance.characterManager.AddChosen(currentInstance);
+                Debug.Log($"Sent character: {currentInstance} to CharacterManager");
+            }
+            SceneManager.LoadSceneAsync(1);
         }
-        GameManager.Instance.timeManager.isPaused = false;
-        SceneManager.LoadSceneAsync(1);
+        else
+        {
+            Debug.Log("Tidak cukup");
+        } 
     }
 
     public void GoBack()
