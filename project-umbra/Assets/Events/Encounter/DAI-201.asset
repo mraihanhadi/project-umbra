@@ -1,0 +1,40 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f8b3e4668ee9e10449c44cda5bf9416b, type: 3}
+  m_Name: DAI-201
+  m_EditorClassIdentifier: 
+  IDEvent: 
+  namaEvent: 
+  jenisEvent: 
+  jobRequirement: 0
+  yearInMarblesMin: 0
+  intelligenceMin: 0
+  strengthMin: 0
+  charmMin: 0
+  luckMin: 0
+  goodAligned: 0
+  evilAligned: 0
+  intelligenceReward: 0
+  strengthReward: 0
+  charmReward: 0
+  luckReward: 0
+  intelligencePunishment: 0
+  strengthPunishment: 0
+  charmPunishment: 0
+  luckPunishment: 0
+  intelligenceHidden: 0
+  strengthHidden: 0
+  charmHidden: 0
+  luckHidden: 0
+  winDescription: 
+  loseDescription: 
+  repeatable: 0
