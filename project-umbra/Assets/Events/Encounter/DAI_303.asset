@@ -12,29 +12,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f8b3e4668ee9e10449c44cda5bf9416b, type: 3}
   m_Name: DAI_303
   m_EditorClassIdentifier: 
-  IDEvent: 
-  namaEvent: 
-  jenisEvent: 
+  IDEvent: DAI_303
+  namaEvent: An Encounter With A Cursed Relic
+  jenisEvent: Encounter
   jobRequirement: 0
-  yearInMarblesMin: 0
+  yearInMarblesMin: 3
   intelligenceMin: 0
   strengthMin: 0
   charmMin: 0
   luckMin: 0
-  goodAligned: 0
-  evilAligned: 0
-  intelligenceReward: 0
+  goodAligned: 10
+  evilAligned: 10
+  intelligenceReward: 2
   strengthReward: 0
   charmReward: 0
   luckReward: 0
   intelligencePunishment: 0
-  strengthPunishment: 0
+  strengthPunishment: 2
   charmPunishment: 0
   luckPunishment: 0
-  intelligenceHidden: 0
+  intelligenceHidden: 50
   strengthHidden: 0
   charmHidden: 0
   luckHidden: 0
-  winDescription: 
-  loseDescription: 
-  repeatable: 0
+  winDescription: Chosen menguasai rahasia relik tersebut dan  memperoleh wawasan
+  loseDescription: Relik menyerang Chosen dengan sihir, membuat Chosen terguncang
+  repeatable: 1
