@@ -28,5 +28,47 @@ MonoBehaviour:
   luck:
     min: 0
     max: 10
+  possibleJob:
+  - job: {fileID: 11400000, guid: 5cc758726e1cdb9499d2b2476de95d49, type: 2}
+    baseChance: 35
+    alignment: 0
+    condition: 0
+    conditionBonus: 0
+  - job: {fileID: 11400000, guid: e98d825319fea864daf4f9f7376d843e, type: 2}
+    baseChance: 40
+    alignment: 0
+    condition: 0
+    conditionBonus: 0
+  - job: {fileID: 11400000, guid: 2544734b4977ead4fa113d56c7effb05, type: 2}
+    baseChance: 23
+    alignment: 0
+    condition: 1
+    conditionBonus: 1
+  - job: {fileID: 11400000, guid: c3dc2d512621a894fa0df298f860f24a, type: 2}
+    baseChance: 0
+    alignment: 0
+    condition: 2
+    conditionBonus: 1
+  - job: {fileID: 11400000, guid: 5cc758726e1cdb9499d2b2476de95d49, type: 2}
+    baseChance: 20
+    alignment: 1
+    condition: 0
+    conditionBonus: 0
+  - job: {fileID: 11400000, guid: e98d825319fea864daf4f9f7376d843e, type: 2}
+    baseChance: 60
+    alignment: 1
+    condition: 0
+    conditionBonus: 0
+  - job: {fileID: 11400000, guid: 8eb7a6a31f1861b40ad861391faaa87f, type: 2}
+    baseChance: 19
+    alignment: 1
+    condition: 3
+    conditionBonus: 1
+  - job: {fileID: 11400000, guid: b8f59cc2247bf2445acdb48f13083b2a, type: 2}
+    baseChance: 0
+    alignment: 1
+    condition: 4
+    conditionBonus: 1
+  chosenJob: {fileID: 0}
   specialCharacteristic: Lady Killer
   characterSprite: {fileID: 1583038366733388237, guid: ac2788e86336c82448d7f687288fd50e, type: 3}

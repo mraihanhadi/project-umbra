@@ -28,5 +28,42 @@ MonoBehaviour:
   luck:
     min: 70
     max: 80
+  possibleJob:
+  - job: {fileID: 11400000, guid: 5f4d20f5b5106c940979f38f1fb053fe, type: 2}
+    baseChance: 70
+    alignment: 0
+    condition: 0
+    conditionBonus: 0
+  - job: {fileID: 11400000, guid: d697190c376d5bd4282bb3b9bd1fbf94, type: 2}
+    baseChance: 19
+    alignment: 0
+    condition: 1
+    conditionBonus: 1
+  - job: {fileID: 11400000, guid: c3dc2d512621a894fa0df298f860f24a, type: 2}
+    baseChance: 0
+    alignment: 0
+    condition: 2
+    conditionBonus: 1
+  - job: {fileID: 11400000, guid: 5f4d20f5b5106c940979f38f1fb053fe, type: 2}
+    baseChance: 70
+    alignment: 1
+    condition: 0
+    conditionBonus: 0
+  - job: {fileID: 11400000, guid: daafdbbdb57d0e546935ef4c7887e431, type: 2}
+    baseChance: 20
+    alignment: 1
+    condition: 0
+    conditionBonus: 0
+  - job: {fileID: 11400000, guid: aba12a9d6d10ec94c9c743ad123fbadd, type: 2}
+    baseChance: 9
+    alignment: 1
+    condition: 3
+    conditionBonus: 1
+  - job: {fileID: 11400000, guid: b8f59cc2247bf2445acdb48f13083b2a, type: 2}
+    baseChance: 0
+    alignment: 1
+    condition: 4
+    conditionBonus: 1
+  chosenJob: {fileID: 0}
   specialCharacteristic: Black Widow
   characterSprite: {fileID: -4925832402046526473, guid: d8605ad06ea57254a8e39f92da0da21d, type: 3}

@@ -28,7 +28,37 @@ MonoBehaviour:
   luck:
     min: 60
     max: 70
-  possibleJob: []
+  possibleJob:
+  - job: {fileID: 11400000, guid: 5cc758726e1cdb9499d2b2476de95d49, type: 2}
+    baseChance: 80
+    alignment: 0
+    condition: 0
+    conditionBonus: 0
+  - job: {fileID: 11400000, guid: 5f4d20f5b5106c940979f38f1fb053fe, type: 2}
+    baseChance: 19
+    alignment: 0
+    condition: 1
+    conditionBonus: 1
+  - job: {fileID: 11400000, guid: c3dc2d512621a894fa0df298f860f24a, type: 2}
+    baseChance: 0
+    alignment: 0
+    condition: 2
+    conditionBonus: 1
+  - job: {fileID: 11400000, guid: 5cc758726e1cdb9499d2b2476de95d49, type: 2}
+    baseChance: 80
+    alignment: 1
+    condition: 0
+    conditionBonus: 0
+  - job: {fileID: 11400000, guid: 5f4d20f5b5106c940979f38f1fb053fe, type: 2}
+    baseChance: 19
+    alignment: 1
+    condition: 3
+    conditionBonus: 1
+  - job: {fileID: 11400000, guid: b8f59cc2247bf2445acdb48f13083b2a, type: 2}
+    baseChance: 0
+    alignment: 1
+    condition: 4
+    conditionBonus: 1
   chosenJob: {fileID: 0}
   specialCharacteristic: True Chosen
   characterSprite: {fileID: 1550746193010043188, guid: 0677090dfa28b434d90b84473369777d, type: 3}
