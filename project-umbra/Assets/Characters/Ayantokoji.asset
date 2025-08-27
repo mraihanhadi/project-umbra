@@ -32,8 +32,8 @@ MonoBehaviour:
   - job: {fileID: 11400000, guid: b8f59cc2247bf2445acdb48f13083b2a, type: 2}
     baseChance: 100
     alignment: 1
-    condition: 3
-    conditionBonus: -100
+    condition: 5
+    conditionBonus: 0
   - job: {fileID: 11400000, guid: 8eb7a6a31f1861b40ad861391faaa87f, type: 2}
     baseChance: 30
     alignment: 1

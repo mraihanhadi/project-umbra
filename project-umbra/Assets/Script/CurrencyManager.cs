@@ -38,9 +38,9 @@ public class CurrencyManager : MonoBehaviour
         }
     }
 
-    public void IncreaseDivinePower()
+    public void IncreaseDivinePower(int amount)
     {
-        divinePower += faith;
+        divinePower += amount;
         UpdateText();
     }
     public void DecreaseDivinePower(int amount)
@@ -73,7 +73,20 @@ public class CurrencyManager : MonoBehaviour
     }
     public void UpdateText()
     {
-        currencyText.text = "" + divinePower;
-        faithText.text = faith+"%";
+        currencyText.text = FormatNumber(divinePower);
+        faithText.text = faith + "%";
     }
+    
+    private string FormatNumber(int number)
+{
+    if (number >= 1000000000) 
+        return (number / 1000000000f).ToString("0.#") + "B";
+    if (number >= 1000000) 
+        return (number / 1000000f).ToString("0.#") + "M";
+    if (number >= 1000)
+        return (number / 1000f).ToString("0.#") + "K";
+
+    return number.ToString();
+}
+
 }

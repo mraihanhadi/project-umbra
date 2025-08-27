@@ -6,7 +6,9 @@ public enum JobConditionType
     IfHeroExists,
     IfNoHero,
     IfDreadPrinceExists,
-    IfNoDreadPrince
+    IfNoDreadPrince,
+    ForceIfNoDreadPrince,
+    ForceIfNoHero
 }
 
 public enum AlignmentType

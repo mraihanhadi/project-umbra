@@ -3,6 +3,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
 using UnityEngine.UI;
+using System.Security.Cryptography.X509Certificates;
 
 public class MainViewManager : MonoBehaviour
 {
@@ -14,6 +15,7 @@ public class MainViewManager : MonoBehaviour
     public TextMeshProUGUI namaPlanet;
     public Button visitBtn;
     public Image visitImg;
+    public GameObject debugPanel;
 
     GameObject menuBtn;
     GameObject saveMenu;
@@ -58,6 +60,14 @@ public class MainViewManager : MonoBehaviour
                 {
                     CloseMenu();
                 }
+            }
+        }
+
+        if (Input.GetKeyDown(KeyCode.F7))
+        {
+            if (!debugPanel.activeInHierarchy)
+            {
+                OpenDebugPanel();
             }
         }
     }
@@ -178,5 +188,20 @@ public class MainViewManager : MonoBehaviour
             seq.Append(dunia2.DOAnchorPosX(dunia2Origin, 1f).SetEase(Ease.InOutQuart));
             dunia1.DOAnchorPosX(dunia1Origin, 1f).SetEase(Ease.InOutQuart);
         }
+    }
+
+    public void OpenDebugPanel()
+    {
+        debugPanel.SetActive(true);
+    }
+
+    public void Debug1()
+    {
+        GameManager.Instance.currencyManager.IncreaseDivinePower(999);
+    }
+
+    public void CloseDebugPanel()
+    {
+        debugPanel.SetActive(false);
     }
 }

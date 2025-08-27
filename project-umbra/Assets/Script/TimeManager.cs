@@ -53,7 +53,7 @@ public class TimeManager : MonoBehaviour
         {
             timer -= moonInterval;
             moons++;
-            GameManager.Instance.currencyManager.IncreaseDivinePower();
+            GameManager.Instance.currencyManager.IncreaseDivinePower(GameManager.Instance.currencyManager.faith);
             if (moons >= moonsPerSun)
             {
                 moons = 0;

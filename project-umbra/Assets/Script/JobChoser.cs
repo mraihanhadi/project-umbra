@@ -12,6 +12,17 @@ public class JobChoser
         foreach (var jc in data.possibleJob)
         {
             if (jc.alignment != alignment) continue;
+
+            if (jc.condition == JobConditionType.ForceIfNoDreadPrince && !dreadPrinceExists)
+            {
+                return jc.job;
+            }
+
+            if (jc.condition == JobConditionType.ForceIfNoHero && !heroExists)
+            {
+                return jc.job;
+            }
+
             int finalChance = jc.baseChance;
             switch (jc.condition)
             {
@@ -32,9 +43,9 @@ public class JobChoser
             if (finalChance > 0)
                 validChances.Add((jc.job, finalChance));
         }
+        
         int totalWeight = validChances.Sum(x => x.weight);
         int roll = Random.Range(0, totalWeight);
-
         foreach (var entry in validChances)
         {
             if (roll < entry.weight) return entry.job;
