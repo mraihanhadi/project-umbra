@@ -2,6 +2,7 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System.Linq;
 public class EarthManager : MonoBehaviour
 {
     public Image npcImage;
@@ -38,6 +39,10 @@ public class EarthManager : MonoBehaviour
             gameManagerInstance.currencyManager.DecreaseDivinePower(divinePowerCost);
             if (currentInstance != null)
             {
+                bool heroExists = GameManager.Instance.characterManager.sentChosenInstance.Any(c => c.assignedJob != null && c.assignedJob.jobId == "GOO-003");
+                bool dreadPrinceExists = GameManager.Instance.characterManager.sentChosenInstance.Any(c => c.assignedJob != null && c.assignedJob.jobId == "EVI-003");
+                JobData chosenJob = JobChoser.AssignJob(currentInstance.baseData, currentInstance.alignment, heroExists, dreadPrinceExists);
+                currentInstance.assignedJob = chosenJob;
                 GameManager.Instance.characterManager.AddChosen(currentInstance);
                 Debug.Log($"Sent character: {currentInstance} to CharacterManager");
             }

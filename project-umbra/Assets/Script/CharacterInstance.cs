@@ -29,5 +29,5 @@ public class CharacterInstance
     public string Special => baseData.specialCharacteristic;
     public string Gender => baseData.Gender;
     public List<string> triggeredEventIDs = new List<string>();
-
+    public JobData assignedJob;
 }

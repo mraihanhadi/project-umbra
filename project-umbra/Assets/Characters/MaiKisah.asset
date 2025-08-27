@@ -43,7 +43,7 @@ MonoBehaviour:
     baseChance: 9
     alignment: 0
     condition: 1
-    conditionBonus: 10
+    conditionBonus: 1
   - job: {fileID: 11400000, guid: daafdbbdb57d0e546935ef4c7887e431, type: 2}
     baseChance: 30
     alignment: 1
@@ -58,7 +58,7 @@ MonoBehaviour:
     baseChance: 49
     alignment: 1
     condition: 3
-    conditionBonus: 50
+    conditionBonus: 1
   - job: {fileID: 11400000, guid: b8f59cc2247bf2445acdb48f13083b2a, type: 2}
     baseChance: 0
     alignment: 1
