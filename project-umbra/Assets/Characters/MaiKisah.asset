@@ -49,12 +49,7 @@ MonoBehaviour:
     alignment: 1
     condition: 0
     conditionBonus: 0
-  - job: {fileID: 11400000, guid: 5f4d20f5b5106c940979f38f1fb053fe, type: 2}
-    baseChance: 20
-    alignment: 1
-    condition: 0
-    conditionBonus: 0
-  - job: {fileID: 11400000, guid: aba12a9d6d10ec94c9c743ad123fbadd, type: 2}
+  - job: {fileID: 11400000, guid: 8eb7a6a31f1861b40ad861391faaa87f, type: 2}
     baseChance: 49
     alignment: 1
     condition: 3

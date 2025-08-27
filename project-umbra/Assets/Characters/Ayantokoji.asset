@@ -35,12 +35,12 @@ MonoBehaviour:
     condition: 3
     conditionBonus: -100
   - job: {fileID: 11400000, guid: 8eb7a6a31f1861b40ad861391faaa87f, type: 2}
-    baseChance: 70
+    baseChance: 30
     alignment: 1
     condition: 0
     conditionBonus: 0
   - job: {fileID: 11400000, guid: aba12a9d6d10ec94c9c743ad123fbadd, type: 2}
-    baseChance: 30
+    baseChance: 70
     alignment: 1
     condition: 0
     conditionBonus: 0
