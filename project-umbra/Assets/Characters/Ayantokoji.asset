@@ -29,9 +29,19 @@ MonoBehaviour:
     min: 0
     max: 0
   possibleJob:
-  - job: {fileID: 0}
-    baseChance: 0
-    alignment: 0
+  - job: {fileID: 11400000, guid: b8f59cc2247bf2445acdb48f13083b2a, type: 2}
+    baseChance: 100
+    alignment: 1
+    condition: 3
+    conditionBonus: 0
+  - job: {fileID: 11400000, guid: 8eb7a6a31f1861b40ad861391faaa87f, type: 2}
+    baseChance: 70
+    alignment: 1
+    condition: 0
+    conditionBonus: 0
+  - job: {fileID: 11400000, guid: aba12a9d6d10ec94c9c743ad123fbadd, type: 2}
+    baseChance: 30
+    alignment: 1
     condition: 0
     conditionBonus: 0
   chosenJob: {fileID: 0}

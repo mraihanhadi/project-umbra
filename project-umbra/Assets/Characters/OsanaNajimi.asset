@@ -28,5 +28,17 @@ MonoBehaviour:
   luck:
     min: 50
     max: 50
+  possibleJob:
+  - job: {fileID: 11400000, guid: daafdbbdb57d0e546935ef4c7887e431, type: 2}
+    baseChance: 100
+    alignment: 0
+    condition: 0
+    conditionBonus: 0
+  - job: {fileID: 11400000, guid: daafdbbdb57d0e546935ef4c7887e431, type: 2}
+    baseChance: 100
+    alignment: 1
+    condition: 0
+    conditionBonus: 0
+  chosenJob: {fileID: 0}
   specialCharacteristic: Jack Of All Trade
   characterSprite: {fileID: -3400263231217397214, guid: a7620ae4292bdcd4a9a9876e03e23ac2, type: 3}

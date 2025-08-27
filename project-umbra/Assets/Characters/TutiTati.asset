@@ -28,5 +28,22 @@ MonoBehaviour:
   luck:
     min: 30
     max: 40
+  possibleJob:
+  - job: {fileID: 11400000, guid: 5f4d20f5b5106c940979f38f1fb053fe, type: 2}
+    baseChance: 50
+    alignment: 1
+    condition: 0
+    conditionBonus: 0
+  - job: {fileID: 11400000, guid: aba12a9d6d10ec94c9c743ad123fbadd, type: 2}
+    baseChance: 49
+    alignment: 1
+    condition: 3
+    conditionBonus: 50
+  - job: {fileID: 11400000, guid: b8f59cc2247bf2445acdb48f13083b2a, type: 2}
+    baseChance: 0
+    alignment: 1
+    condition: 4
+    conditionBonus: 1
+  chosenJob: {fileID: 0}
   specialCharacteristic: QuickLearner
   characterSprite: {fileID: -7607820430976521780, guid: 04a88be54b54dcf489c28cfdcc0dbaa0, type: 3}

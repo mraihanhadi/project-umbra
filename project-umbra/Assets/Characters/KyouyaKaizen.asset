@@ -28,5 +28,22 @@ MonoBehaviour:
   luck:
     min: 40
     max: 40
+  possibleJob:
+  - job: {fileID: 11400000, guid: c3dc2d512621a894fa0df298f860f24a, type: 2}
+    baseChance: 100
+    alignment: 0
+    condition: 1
+    conditionBonus: 0
+  - job: {fileID: 11400000, guid: 2544734b4977ead4fa113d56c7effb05, type: 2}
+    baseChance: 95
+    alignment: 0
+    condition: 0
+    conditionBonus: 0
+  - job: {fileID: 11400000, guid: d697190c376d5bd4282bb3b9bd1fbf94, type: 2}
+    baseChance: 5
+    alignment: 0
+    condition: 0
+    conditionBonus: 0
+  chosenJob: {fileID: 0}
   specialCharacteristic: All Brawn No Brain
   characterSprite: {fileID: 7439344015361158308, guid: 5a1341d6d8b05a045975b56f308aa8b7, type: 3}
