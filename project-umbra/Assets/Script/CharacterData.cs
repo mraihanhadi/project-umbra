@@ -1,5 +1,14 @@
 using UnityEngine;
 
+public enum JobConditionType
+{
+    None,
+    IfHeroExists,
+    IfNoHero,
+    IfDreadPrinceExists,
+    IfNoDreadPrince
+}
+
 public enum AlignmentType
 {
     Good,
@@ -16,8 +25,10 @@ public enum Rarity
 public class JobChance
 {
     public JobData job;
-    public int chance;
+    public int baseChance;
     public AlignmentType alignment;
+    public JobConditionType condition;
+    public int conditionBonus;
 }
 
 [CreateAssetMenu(fileName = "NewCharacter", menuName = "Characters/Character Data")]
