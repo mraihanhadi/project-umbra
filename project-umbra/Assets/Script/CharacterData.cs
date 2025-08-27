@@ -12,6 +12,14 @@ public enum Rarity
     Rare
 }
 
+[System.Serializable]
+public class JobChance
+{
+    public JobData job;
+    public int chance;
+    public AlignmentType alignment;
+}
+
 [CreateAssetMenu(fileName = "NewCharacter", menuName = "Characters/Character Data")]
 public class CharacterData : ScriptableObject
 {
@@ -23,6 +31,8 @@ public class CharacterData : ScriptableObject
     public Stats strength;
     public Stats charm;
     public Stats luck;
+    public JobChance[] possibleJob;
+    public JobData chosenJob;
     public string specialCharacteristic;
     public Sprite characterSprite;
 }
