@@ -2,11 +2,19 @@ using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
 using UnityEngine.SceneManagement;
+using System.Linq;
 public class EarthManager : MonoBehaviour
 {
     public Image npcImage;
     public TextMeshProUGUI infoText;
+    public int divinePowerCost = 100;
     private CharacterInstance currentInstance;
+    private GameManager gameManagerInstance;
+
+    void Start()
+    {
+        gameManagerInstance = GameManager.Instance;
+    }
     public void DisplayCharacter(CharacterInstance character)
     {
         currentInstance = character;
@@ -26,13 +34,24 @@ public class EarthManager : MonoBehaviour
 
     public void SendCharacter()
     {
-        if (currentInstance != null)
+        if (gameManagerInstance.currencyManager.divinePower >= divinePowerCost)
         {
-            GameManager.Instance.characterManager.AddChosen(currentInstance);
-            Debug.Log($"Sent character: {currentInstance} to CharacterManager");
+            gameManagerInstance.currencyManager.DecreaseDivinePower(divinePowerCost);
+            if (currentInstance != null)
+            {
+                bool heroExists = GameManager.Instance.characterManager.sentChosenInstance.Any(c => c.assignedJob != null && c.assignedJob.jobId == "GOO-003");
+                bool dreadPrinceExists = GameManager.Instance.characterManager.sentChosenInstance.Any(c => c.assignedJob != null && c.assignedJob.jobId == "EVI-003");
+                JobData chosenJob = JobChoser.AssignJob(currentInstance.baseData, currentInstance.alignment, heroExists, dreadPrinceExists);
+                currentInstance.assignedJob = chosenJob;
+                GameManager.Instance.characterManager.AddChosen(currentInstance);
+                Debug.Log($"Sent character: {currentInstance} to CharacterManager");
+            }
+            SceneManager.LoadSceneAsync(1);
         }
-        GameManager.Instance.timeManager.isPaused = false;
-        SceneManager.LoadSceneAsync(1);
+        else
+        {
+            Debug.Log("Tidak cukup");
+        } 
     }
 
     public void GoBack()

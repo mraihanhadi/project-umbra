@@ -657,6 +657,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 477cff69868131647a9a53dce7592470, type: 2}
   - {fileID: 11400000, guid: 7759eadde6eb62b4db6f41b977637404, type: 2}
   - {fileID: 11400000, guid: 9bb3660a971125444b412b7bffe9fcad, type: 2}
+  - {fileID: 11400000, guid: a1654cb6756a6094ea46d8a1879cee36, type: 2}
+  - {fileID: 11400000, guid: ed1bbf165f5aa464e98fa00bdcb5860f, type: 2}
+  - {fileID: 11400000, guid: 294f5d542b704c843b4c2bfcbd53bf52, type: 2}
+  - {fileID: 11400000, guid: cda4feddff2eb8745bac900a7b79767f, type: 2}
   spawnPoint: {fileID: 1563310473}
   characterPrefab: {fileID: 1841286534227738290, guid: 4b6b33e6f6a8650468599fde49323d8e, type: 3}
   rarityChances:

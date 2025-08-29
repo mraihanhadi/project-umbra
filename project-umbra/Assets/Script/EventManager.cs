@@ -77,15 +77,60 @@ public class EventManager : MonoBehaviour
             Debug.LogWarning($"Event {eventID} not found.");
             return;
         }
-        eventPanel.SetActive(true);
-        judulEvent.text = eventData.namaEvent;
-        deskripsiEvent.text = eventData.winDescription;
-        charEvent.intelligence += eventData.intelligenceReward;
-        charEvent.strength += eventData.strengthReward;
-        charEvent.charm += eventData.charmReward;
-        charEvent.luck += eventData.luckReward;
-        timeManager.PauseTime();
+        else
+        {
+            float totalC = 0, totalR = 0;
+            if (eventData.intelligenceHidden > 0)
+            {
+                totalR += eventData.intelligenceHidden;
+                totalC += charEvent.intelligence;
+            }
+            if (eventData.strengthHidden > 0)
+            {
+                totalR += eventData.strengthHidden;
+                totalC += charEvent.strength;
+            }
+            if (eventData.charmHidden > 0)
+            {
+                totalR += eventData.charmHidden;
+                totalC += charEvent.charm;
+            }
+            if (eventData.luckHidden > 0)
+            {
+                totalR += eventData.luckHidden;
+                totalC += charEvent.luck;
+            }
+            float totalX = totalC + totalR;
+            float winChance = calculateWinChance(totalC, totalX);
+            float roll = UnityEngine.Random.Range(0f, 100f);
+            bool isWin = roll <= winChance;
+            eventPanel.SetActive(true);
+            judulEvent.text = eventData.namaEvent;
+            timeManager.PauseTime();
+            if (isWin)
+            {
+                deskripsiEvent.text = eventData.winDescription;
+                charEvent.intelligence += eventData.intelligenceReward;
+                charEvent.strength += eventData.strengthReward;
+                charEvent.charm += eventData.charmReward;
+                charEvent.luck += eventData.luckReward;
+            }
+            else
+            {
+                deskripsiEvent.text = eventData.loseDescription;
+                charEvent.intelligence -= eventData.intelligencePunishment;
+                charEvent.strength -= eventData.strengthPunishment;
+                charEvent.charm -= eventData.charmPunishment;
+                charEvent.luck -= eventData.luckPunishment;
+            }
+            Debug.Log($"Applied event {eventData.namaEvent} to character {charEvent.Name}");
+        }
+    }
 
-        Debug.Log($"Applied event {eventData.namaEvent} to character {charEvent.Name}");
+    float calculateWinChance(float totalC, float totalX)
+    {
+        float winChance;
+        winChance = totalC/totalX * 100f;
+        return winChance;
     }
 }

@@ -28,5 +28,22 @@ MonoBehaviour:
   luck:
     min: 0
     max: 0
+  possibleJob:
+  - job: {fileID: 11400000, guid: b8f59cc2247bf2445acdb48f13083b2a, type: 2}
+    baseChance: 100
+    alignment: 1
+    condition: 5
+    conditionBonus: 0
+  - job: {fileID: 11400000, guid: 8eb7a6a31f1861b40ad861391faaa87f, type: 2}
+    baseChance: 30
+    alignment: 1
+    condition: 0
+    conditionBonus: 0
+  - job: {fileID: 11400000, guid: aba12a9d6d10ec94c9c743ad123fbadd, type: 2}
+    baseChance: 70
+    alignment: 1
+    condition: 0
+    conditionBonus: 0
+  chosenJob: {fileID: 0}
   specialCharacteristic: God Complex
   characterSprite: {fileID: 495456059651229704, guid: f0d11c3de3252614bb029feb21bbc97c, type: 3}

@@ -1,0 +1,74 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6f4bc34eb1eb59549b3c7694dc4a9428, type: 3}
+  m_Name: MinatoTanaka
+  m_EditorClassIdentifier: 
+  chosenName: Minato Tanaka
+  Gender: Male
+  rarity: 0
+  goodAlignmentChance: 70
+  intelligence:
+    min: 30
+    max: 40
+  strength:
+    min: 20
+    max: 30
+  charm:
+    min: 10
+    max: 20
+  luck:
+    min: 90
+    max: 100
+  possibleJob:
+  - job: {fileID: 11400000, guid: 5cc758726e1cdb9499d2b2476de95d49, type: 2}
+    baseChance: 40
+    alignment: 0
+    condition: 0
+    conditionBonus: 0
+  - job: {fileID: 11400000, guid: e98d825319fea864daf4f9f7376d843e, type: 2}
+    baseChance: 40
+    alignment: 0
+    condition: 0
+    conditionBonus: 0
+  - job: {fileID: 11400000, guid: d697190c376d5bd4282bb3b9bd1fbf94, type: 2}
+    baseChance: 23
+    alignment: 0
+    condition: 1
+    conditionBonus: 1
+  - job: {fileID: 11400000, guid: c3dc2d512621a894fa0df298f860f24a, type: 2}
+    baseChance: 0
+    alignment: 0
+    condition: 2
+    conditionBonus: 1
+  - job: {fileID: 11400000, guid: 5cc758726e1cdb9499d2b2476de95d49, type: 2}
+    baseChance: 35
+    alignment: 1
+    condition: 0
+    conditionBonus: 0
+  - job: {fileID: 11400000, guid: e98d825319fea864daf4f9f7376d843e, type: 2}
+    baseChance: 35
+    alignment: 1
+    condition: 0
+    conditionBonus: 0
+  - job: {fileID: 11400000, guid: 8eb7a6a31f1861b40ad861391faaa87f, type: 2}
+    baseChance: 29
+    alignment: 1
+    condition: 3
+    conditionBonus: 1
+  - job: {fileID: 11400000, guid: b8f59cc2247bf2445acdb48f13083b2a, type: 2}
+    baseChance: 0
+    alignment: 1
+    condition: 4
+    conditionBonus: 1
+  chosenJob: {fileID: 0}
+  specialCharacteristic: Lucky Cat
+  characterSprite: {fileID: 3695726576825305165, guid: 02b9c829a2a923a49a0f98875cf86cb2, type: 3}
