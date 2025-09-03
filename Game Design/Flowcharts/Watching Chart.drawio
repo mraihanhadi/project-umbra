@@ -1,9 +1,68 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/135.0.0.0 Safari/537.36 OPR/120.0.0.0" version="28.1.2">
   <diagram name="Page-1" id="sxW57cTITDTZ1ejDQxm0">
-    <mxGraphModel>
+    <mxGraphModel dx="1001" dy="620" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="h7gZDfQLB5iF9w7BFeJ--2" value="&lt;font style=&quot;font-size: 21px;&quot;&gt;WATCHING CHART&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="30" y="30" width="210" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="h7gZDfQLB5iF9w7BFeJ--3" value="&lt;div&gt;Watching&lt;/div&gt;&lt;div&gt;From Main game&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="60" y="110" width="126" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="h7gZDfQLB5iF9w7BFeJ--17" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="h7gZDfQLB5iF9w7BFeJ--10" target="h7gZDfQLB5iF9w7BFeJ--16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h7gZDfQLB5iF9w7BFeJ--10" value="Read Current Map State&amp;nbsp;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="413.5" y="105" width="86.5" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="h7gZDfQLB5iF9w7BFeJ--11" value="Display Loading&lt;div&gt;Cloud&lt;/div&gt;" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="250" y="120" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="h7gZDfQLB5iF9w7BFeJ--14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="h7gZDfQLB5iF9w7BFeJ--3" target="h7gZDfQLB5iF9w7BFeJ--11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h7gZDfQLB5iF9w7BFeJ--15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="h7gZDfQLB5iF9w7BFeJ--11" target="h7gZDfQLB5iF9w7BFeJ--10">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h7gZDfQLB5iF9w7BFeJ--20" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="h7gZDfQLB5iF9w7BFeJ--23">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="418.88" y="270" as="sourcePoint" />
+            <mxPoint x="101" y="380" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h7gZDfQLB5iF9w7BFeJ--16" value="Map&amp;nbsp;" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="414" y="230" width="84.87" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="h7gZDfQLB5iF9w7BFeJ--18" value="Settlement" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" y="350" width="460" height="460" as="geometry" />
+        </mxCell>
+        <mxCell id="h7gZDfQLB5iF9w7BFeJ--21" value="Read Settlement Data And State" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="h7gZDfQLB5iF9w7BFeJ--18">
+          <mxGeometry x="180" y="45" width="90" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="h7gZDfQLB5iF9w7BFeJ--22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="h7gZDfQLB5iF9w7BFeJ--18" source="h7gZDfQLB5iF9w7BFeJ--23" target="h7gZDfQLB5iF9w7BFeJ--21">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="107.5" y="90" as="sourcePoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="h7gZDfQLB5iF9w7BFeJ--27" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="h7gZDfQLB5iF9w7BFeJ--18" source="h7gZDfQLB5iF9w7BFeJ--23" target="h7gZDfQLB5iF9w7BFeJ--24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="h7gZDfQLB5iF9w7BFeJ--23" value="Settlement X" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="h7gZDfQLB5iF9w7BFeJ--18">
+          <mxGeometry x="20" y="40" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="h7gZDfQLB5iF9w7BFeJ--24" value="Enter Settlement X" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="h7gZDfQLB5iF9w7BFeJ--18">
+          <mxGeometry x="25" y="170" width="90" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="h7gZDfQLB5iF9w7BFeJ--25" value="Must" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="h7gZDfQLB5iF9w7BFeJ--18">
+          <mxGeometry x="120" y="60" width="50" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="h7gZDfQLB5iF9w7BFeJ--29" value="Settlement Watching" style="verticalLabelPosition=middle;verticalAlign=middle;shape=offPageConnector;rounded=0;size=0.5;labelPosition=center;align=center;rotation=90;html=1;whiteSpace=wrap;horizontal=0;" vertex="1" parent="h7gZDfQLB5iF9w7BFeJ--18">
+          <mxGeometry x="25" y="290" width="67.5" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="h7gZDfQLB5iF9w7BFeJ--30" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.63;entryY=0.002;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="h7gZDfQLB5iF9w7BFeJ--18" source="h7gZDfQLB5iF9w7BFeJ--24" target="h7gZDfQLB5iF9w7BFeJ--29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
