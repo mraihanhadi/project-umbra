@@ -40,7 +40,10 @@ public class loadingScreen : MonoBehaviour
         // When done, load next scene
         if (elapsedTime >= scrollDuration)
         {
-            GameManager.Instance.timeManager.ResumeTime();
+            if (GameManager.Instance != null)
+            {
+                GameManager.Instance.timeManager.ResumeTime();
+            }
             SceneManager.LoadScene(nextSceneName);
         }
     }
