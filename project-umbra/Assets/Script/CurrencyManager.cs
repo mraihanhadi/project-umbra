@@ -78,15 +78,15 @@ public class CurrencyManager : MonoBehaviour
     }
     
     private string FormatNumber(int number)
-{
-    if (number >= 1000000000) 
-        return (number / 1000000000f).ToString("0.#") + "B";
-    if (number >= 1000000) 
-        return (number / 1000000f).ToString("0.#") + "M";
-    if (number >= 1000)
-        return (number / 1000f).ToString("0.#") + "K";
+    {
+        if (number >= 1000000000) 
+            return (number / 1000000000f).ToString("0.#") + "B";
+        if (number >= 1000000) 
+            return (number / 1000000f).ToString("0.#") + "M";
+        if (number >= 1000)
+            return (number / 1000f).ToString("0.#") + "K";
 
-    return number.ToString();
-}
+        return number.ToString();
+    }
 
 }
