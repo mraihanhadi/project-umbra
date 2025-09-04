@@ -61,5 +61,8 @@ https://www.figma.com/design/EGjlCVQpTj0DNUCwC3QtY7/Project-Umbra?node-id=0-1&t=
 >NPC, Item, And Event Design Spreadsheet:
 https://docs.google.com/spreadsheets/d/1aNgf7Q_IKgR7KDGAHWMj9h0qyoi9KEHV2-Zs9mMJ3M0/edit?usp=sharing
 
+>Asset Google Drive:
+https://drive.google.com/drive/folders/1O_DZtbTCbaLrfrzk6oXvNR0amy3cFkuC
+
 ---
 
