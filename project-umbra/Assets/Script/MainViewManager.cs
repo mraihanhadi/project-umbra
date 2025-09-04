@@ -127,11 +127,11 @@ public class MainViewManager : MonoBehaviour
         GameManager.Instance.timeManager.PauseTime();
         if (isDunia1)
         {
-            SceneManager.LoadSceneAsync(3);
+            SceneManager.LoadSceneAsync("Dunia1");
         }
         else
         {
-            Debug.Log("TBA");
+            SceneManager.LoadSceneAsync("Dunia2");
         }
     }
 
