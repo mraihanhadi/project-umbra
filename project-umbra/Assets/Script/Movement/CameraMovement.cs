@@ -1,3 +1,4 @@
+using Cinemachine;
 using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
@@ -7,10 +8,17 @@ public class CameraMovement : MonoBehaviour
     public float dragSpeed = 3f;
     private Vector3 dragOrigin;
 
+    [Header("Zoom Settings")]
+    public CinemachineVirtualCamera virtualCam;
+    public float zoomSpeed = 2f;
+    public float minZoom = 3f;
+    public float maxZoom = 15f;
+
     void Update()
     {
         HandlePan();
         HandleDrag();
+        HandleZoom();
     }
 
     void HandlePan()
@@ -36,5 +44,15 @@ public class CameraMovement : MonoBehaviour
             dragOrigin = Input.mousePosition;
         }
     }
-    
+
+    void HandleZoom()
+    {
+        float scroll = Input.GetAxis("Mouse ScrollWheel");
+        if (scroll != 0f)
+        {
+            float currentSize = virtualCam.m_Lens.OrthographicSize;
+            float newSize = Mathf.Clamp(currentSize - scroll * zoomSpeed, minZoom, maxZoom);
+            virtualCam.m_Lens.OrthographicSize = newSize;
+        }
+    }
 }

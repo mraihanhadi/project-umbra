@@ -9,6 +9,7 @@ public class GameManager : MonoBehaviour
     public CharacterManager characterManager;
     public EventManager eventManager;
     public CurrencyManager currencyManager;
+    public CityManager cityManager;
     private void Awake()
     {
         if (Instance != null && Instance != this)
