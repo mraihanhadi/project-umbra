@@ -1,11 +1,19 @@
-using JetBrains.Annotations;
-using Microsoft.Unity.VisualStudio.Editor;
-using TMPro;
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
+[System.Serializable]
+public class CityData
+{
+    public string cityName;
+    public List<CharacterInstance> residents = new List<CharacterInstance>();
+    public float hope;
+    public float dread;
+}
+
 public class CityManager : MonoBehaviour
 {
+    public List<CityData> allCities = new List<CityData>(10);
     private string clcikedCity;
     public Sprite[] cityImage;
     public GameObject city;
@@ -61,5 +69,18 @@ public class CityManager : MonoBehaviour
             }
         }
         return null;
+    }
+
+    public void AddCharacterToCity(string cityName, CharacterInstance character)
+    {
+        string target = cityName.Replace(" ", "").ToLower();
+        CityData cityData = allCities.Find(c => c.cityName.Replace(" ", "").ToLower() == target);
+        if (cityData == null)
+        {
+            Debug.LogWarning($"City {cityName} not found in CityManager!");
+            return;
+        }
+        cityData.residents.Add(character);
+        Debug.Log($"Character {character.Name} added to {cityData.cityName}");
     }
 }
