@@ -49,6 +49,9 @@ Tim Kami Beranggotakan:
 GDD Project Umbra:
 https://docs.google.com/document/d/1NIcN1gOx7C6TWSbxZ5K3Y_SGlQgbLMlgy1HwD-zYjOk/edit?usp=sharing
 
+V2:
+https://www.notion.so/Project-Umbra-GDD-v2-23ead9b7c0ff8006a8f3e127f3a16d54?source=copy_link
+
 >Whiteboard Brainstorm:|
 https://telkomuniversityofficial-my.sharepoint.com/:wb:/g/personal/gillbrian_student_telkomuniversity_ac_id/ERd7FkO65I5DqPe_vqTUB0cB9W9goASdhk3mD0kfF7ishA?e=TSaZQH
 
