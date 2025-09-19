@@ -44,6 +44,7 @@ public class EarthManager : MonoBehaviour
                 JobData chosenJob = JobChoser.AssignJob(currentInstance.baseData, currentInstance.alignment, heroExists, dreadPrinceExists);
                 currentInstance.assignedJob = chosenJob;
                 GameManager.Instance.characterManager.AddChosen(currentInstance);
+                GameManager.Instance.nextSpawnEvent = new PendingEvent{character = currentInstance, cityName = "Runeborg Village"};
                 Debug.Log($"Sent character: {currentInstance} to CharacterManager");
             }
             SceneManager.LoadSceneAsync(1);

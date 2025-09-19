@@ -14,14 +14,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IDEvent: SPA-005
   namaEvent: Spawn in Maltheron Castle
-  jenisEvent: Spawn
+  jenisEvent: 1
+  jobRequirement: 0
   yearInMarblesMin: 0
   intelligenceMin: 0
   strengthMin: 0
   charmMin: 0
   luckMin: 71
-  goodAligned: 50
-  evilAligned: 10
+  goodAligned: 5
+  evilAligned: 5
   intelligenceReward: 0
   strengthReward: 0
   charmReward: 0
@@ -34,4 +35,7 @@ MonoBehaviour:
   strengthHidden: 0
   charmHidden: 0
   luckHidden: 0
+  winDescription: 
+  loseDescription: 
   repeatable: 0
+  spawnLocation: MaltheronCastle

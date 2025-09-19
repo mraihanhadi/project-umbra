@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   IDEvent: SPA-002
   namaEvent: Spawn in a Kharovar Village
-  jenisEvent: Spawn
+  jenisEvent: 1
+  jobRequirement: 0
   yearInMarblesMin: 0
   intelligenceMin: 0
   strengthMin: 0
@@ -34,4 +35,7 @@ MonoBehaviour:
   strengthHidden: 0
   charmHidden: 0
   luckHidden: 0
+  winDescription: 
+  loseDescription: 
   repeatable: 0
+  spawnLocation: KharovarVillage

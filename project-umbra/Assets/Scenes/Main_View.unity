@@ -4166,6 +4166,12 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 9ec9eff286603a3498ed1c27671b477c, type: 2}
   - {fileID: 11400000, guid: 4a1423bd65c707b4394aa7c3405bd9b1, type: 2}
   - {fileID: 11400000, guid: a5d88a299c4505047bcaacb9ad13b9d0, type: 2}
+  - {fileID: 11400000, guid: b452af552ea9f7a4caa083e04b0dc854, type: 2}
+  - {fileID: 11400000, guid: a392f16fe8a39ae4d8a06c25179902bc, type: 2}
+  - {fileID: 11400000, guid: ebf7136ad89a437489d7a7c28bdfd56a, type: 2}
+  - {fileID: 11400000, guid: 40f8fa2d15c93b740be5e2bbd3da988d, type: 2}
+  - {fileID: 11400000, guid: d8d0aa470fe7fa946bf64c89152bfcee, type: 2}
+  - {fileID: 11400000, guid: fedb16ca677f1b84cb6608b600fb9e85, type: 2}
   eventPanel: {fileID: 0}
   judulEvent: {fileID: 0}
   deskripsiEvent: {fileID: 0}
@@ -4675,6 +4681,99 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1521496380}
   m_CullTransparentMesh: 1
+--- !u!1 &1541078336
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1541078337}
+  - component: {fileID: 1541078338}
+  m_Layer: 0
+  m_Name: CityManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1541078337
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541078336}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2115229517}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1541078338
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1541078336}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0315a31748c0a3e4f9571b2763750327, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  allCities:
+  - cityName: AureliaKingdom
+    residents: []
+    hope: 0
+    dread: 0
+  - cityName: RuneborgVillage
+    residents: []
+    hope: 0
+    dread: 0
+  - cityName: DunmereOutpost
+    residents: []
+    hope: 0
+    dread: 0
+  - cityName: FenringForest
+    residents: []
+    hope: 0
+    dread: 0
+  - cityName: SighelmRoad
+    residents: []
+    hope: 0
+    dread: 0
+  - cityName: DreadwynCastle
+    residents: []
+    hope: 0
+    dread: 0
+  - cityName: VorlunFort
+    residents: []
+    hope: 0
+    dread: 0
+  - cityName: KharovarVillage
+    residents: []
+    hope: 0
+    dread: 0
+  - cityName: MaltheronOldCastle
+    residents: []
+    hope: 0
+    dread: 0
+  - cityName: DevilRavine
+    residents: []
+    hope: 0
+    dread: 0
+  cityImage:
+  - {fileID: -2318723029736303817, guid: dc0ea2510ebf5c444bc27e844d30504d, type: 3}
+  - {fileID: -8764242359198948363, guid: 152643c0b7ea54b4b841b4d378db4f54, type: 3}
+  - {fileID: -423236520, guid: 5d75905e044775341836976430f5fa69, type: 3}
+  - {fileID: 4494908908156296125, guid: 3d7d8386da1ac4e488b30f1fdbe99590, type: 3}
+  - {fileID: -5832165353808876113, guid: 57ca0839a760e9b4389656d07c1d8e86, type: 3}
+  city: {fileID: 0}
+  currentCityImg: {fileID: 0}
 --- !u!1 &1541528350
 GameObject:
   m_ObjectHideFlags: 0
@@ -6699,6 +6798,7 @@ MonoBehaviour:
   characterManager: {fileID: 1092810317}
   eventManager: {fileID: 1381359965}
   currencyManager: {fileID: 1062740579}
+  cityManager: {fileID: 1541078338}
 --- !u!4 &2115229517
 Transform:
   m_ObjectHideFlags: 0
@@ -6716,6 +6816,7 @@ Transform:
   - {fileID: 790982446}
   - {fileID: 1092810316}
   - {fileID: 1062740580}
+  - {fileID: 1541078337}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2118281012

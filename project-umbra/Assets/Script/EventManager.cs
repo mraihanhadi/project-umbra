@@ -31,10 +31,23 @@ public class EventManager : MonoBehaviour
         eventPanel = allObjects.FirstOrDefault(go => go.name == "EventPanel");
         GameObject foundUIJudul = allObjects.FirstOrDefault(go => go.name == "Judul");
         GameObject foundUIDeskripsi = allObjects.FirstOrDefault(go => go.name == "Deskripsi");
-        if (eventPanel != null || foundUIJudul != null || foundUIDeskripsi != null)
+
+        if (eventPanel != null && foundUIJudul != null && foundUIDeskripsi != null)
         {
             judulEvent = foundUIJudul.GetComponent<TextMeshProUGUI>();
             deskripsiEvent = foundUIDeskripsi.GetComponent<TextMeshProUGUI>();
+
+            if (GameManager.Instance.nextSpawnEvent != null && GameManager.Instance.nextSpawnEvent.character != null)
+            {
+                var pending = GameManager.Instance.nextSpawnEvent;
+                ChosenSpawn(pending.character, pending.cityName);
+                GameManager.Instance.nextSpawnEvent = null;
+            }
+            else
+            {
+                Debug.Log("Tidak ada spawn event pending.");
+                eventPanel.SetActive(false);
+            }
         }
         else
         {
@@ -44,6 +57,7 @@ public class EventManager : MonoBehaviour
             deskripsiEvent = null;
         }
     }
+
 
     public void TestTriggerEvents()
     {
@@ -130,7 +144,48 @@ public class EventManager : MonoBehaviour
     float calculateWinChance(float totalC, float totalX)
     {
         float winChance;
-        winChance = totalC/totalX * 100f;
+        winChance = totalC / totalX * 100f;
         return winChance;
+    }
+
+    public void ChosenSpawn(CharacterInstance character, string cityName)
+    {
+        var spawnEvents = allEvents.Where(e => e.jenisEvent == EventType.Spawn).ToList();
+        float totalWeight = 0;
+        foreach (var ev in spawnEvents)
+        {
+            totalWeight += (character.alignment == AlignmentType.Good) ? ev.goodAligned : ev.evilAligned;
+        }
+
+        if (totalWeight <= 0)
+        {
+            Debug.LogWarning("No spawn events available for this alignment!");
+            return;
+        }
+
+        float pick = UnityEngine.Random.Range(0f, totalWeight);
+        float cumulative = 0;
+        EventData chosenEvent = null;
+
+        foreach (var ev in spawnEvents)
+        {
+            cumulative += (character.alignment == AlignmentType.Good) ? ev.goodAligned : ev.evilAligned;
+            if (pick <= cumulative)
+            {
+                chosenEvent = ev;
+                break;
+            }
+        }
+
+        if (chosenEvent != null)
+        {
+            eventPanel.SetActive(true);
+            judulEvent.text = chosenEvent.namaEvent;
+            deskripsiEvent.text = chosenEvent.winDescription;
+
+            GameManager.Instance.cityManager.AddCharacterToCity(cityName, character);
+            Debug.Log($"Spawn event {chosenEvent.IDEvent} triggered for {character.Name}");
+        }
+
     }
 }

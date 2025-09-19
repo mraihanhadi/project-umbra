@@ -104,6 +104,7 @@ public class TimeManager : MonoBehaviour
         {
             foreach (var e in eventManager.allEvents)
             {
+                if (e.jenisEvent != EventType.Encounter) continue;
                 if (!e.repeatable && character.triggeredEventIDs.Contains(e.IDEvent)) continue;
                 if (suns < e.yearInMarblesMin) continue;
                 if (character.intelligence < e.intelligenceMin || character.strength < e.strengthMin || character.charm < e.charmMin || character.luck < e.luckMin) continue;

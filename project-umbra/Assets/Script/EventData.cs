@@ -15,12 +15,14 @@ public enum Jobs
     DreadPrince
 }
 
+public enum EventType {Encounter, Spawn}
+
 [CreateAssetMenu(fileName = "NewEvent", menuName = "Event/Event Data")]
 public class EventData : ScriptableObject
 {
     public string IDEvent;
     public string namaEvent;
-    public string jenisEvent;
+    public EventType jenisEvent;
     [Header("Jobs Requirement")]
     public Jobs jobRequirement;
     [Header("Minimal Attributes")]
@@ -52,4 +54,6 @@ public class EventData : ScriptableObject
     public string loseDescription;
     [Space]
     public bool repeatable;
+
+    public string spawnLocation;
 }

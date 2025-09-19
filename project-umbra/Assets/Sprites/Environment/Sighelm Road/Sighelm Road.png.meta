@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 5d75905e044775341836976430f5fa69
+guid: 3d7d8386da1ac4e488b30f1fdbe99590
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8717953984420275946
-    second: old castle maltheron_0
+      213: 4494908908156296125
+    second: Sighelm Road_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: old castle maltheron_0
+      name: Sighelm Road_0
       rect:
         serializedVersion: 2
         x: 0
@@ -115,8 +115,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 6199d667a0b930780800000000000000
-      internalID: -8717953984420275946
+      spriteID: dbb156046df116e30800000000000000
+      internalID: 4494908908156296125
       vertices: []
       indices: 
       edges: []
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      old castle maltheron_0: -8717953984420275946
+      Sighelm Road_0: 4494908908156296125
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
