@@ -5,7 +5,6 @@ using UnityEngine.SceneManagement;
 public class PendingEvent
 {
     public CharacterInstance character;
-    public string cityName;
 }
 
 [SerializeField]

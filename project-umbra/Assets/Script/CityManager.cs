@@ -31,6 +31,7 @@ public class CityManager : MonoBehaviour
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         GameObject foundCity = GameObject.Find("City");
+        
         if (foundCity != null)
         {
             city = foundCity;
@@ -81,6 +82,7 @@ public class CityManager : MonoBehaviour
             return;
         }
         cityData.residents.Add(character);
+        character.SetCurrentLocation(cityName);
         Debug.Log($"Character {character.Name} added to {cityData.cityName}");
     }
 }
