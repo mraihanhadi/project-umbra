@@ -62,3 +62,4 @@ MonoBehaviour:
   chosenJob: {fileID: 0}
   specialCharacteristic: True Chosen
   characterSprite: {fileID: 1550746193010043188, guid: 0677090dfa28b434d90b84473369777d, type: 3}
+  headshot: {fileID: 1550746193010043188, guid: 9ba7c9ade61b34b419087100b36217a6, type: 3}

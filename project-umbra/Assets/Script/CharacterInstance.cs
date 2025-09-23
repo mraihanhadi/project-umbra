@@ -28,6 +28,7 @@ public class CharacterInstance
 
     public string Name => baseData.chosenName;
     public Sprite Sprite => baseData.characterSprite;
+    public Sprite Headshot => baseData.headshot;
     public Rarity Rarity => baseData.rarity;
     public string Special => baseData.specialCharacteristic;
     public string Gender => baseData.Gender;

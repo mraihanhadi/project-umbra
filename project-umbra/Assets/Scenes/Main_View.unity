@@ -4784,6 +4784,8 @@ MonoBehaviour:
   - {fileID: 4494908908156296125, guid: 3d7d8386da1ac4e488b30f1fdbe99590, type: 3}
   - {fileID: -5832165353808876113, guid: 57ca0839a760e9b4389656d07c1d8e86, type: 3}
   city: {fileID: 0}
+  chosenList: {fileID: 0}
+  chosenContent: {fileID: 1274981653706662381, guid: f56bf24c327b79e4c963398b44fc44fa, type: 3}
   currentCityImg: {fileID: 0}
 --- !u!1 &1541528350
 GameObject:

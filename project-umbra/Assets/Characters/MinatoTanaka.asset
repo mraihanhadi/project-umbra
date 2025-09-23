@@ -72,3 +72,4 @@ MonoBehaviour:
   chosenJob: {fileID: 0}
   specialCharacteristic: Lucky Cat
   characterSprite: {fileID: 3695726576825305165, guid: 02b9c829a2a923a49a0f98875cf86cb2, type: 3}
+  headshot: {fileID: 3695726576825305165, guid: 7e70cdfad8b51ac439545b1c681f7800, type: 3}

@@ -72,3 +72,4 @@ MonoBehaviour:
   chosenJob: {fileID: 0}
   specialCharacteristic: Lady Killer
   characterSprite: {fileID: 1583038366733388237, guid: ac2788e86336c82448d7f687288fd50e, type: 3}
+  headshot: {fileID: 1583038366733388237, guid: 944f20685cbf33144bf8747f3ad3a204, type: 3}

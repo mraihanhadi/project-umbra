@@ -47,3 +47,4 @@ MonoBehaviour:
   chosenJob: {fileID: 0}
   specialCharacteristic: QuickLearner
   characterSprite: {fileID: -7607820430976521780, guid: 04a88be54b54dcf489c28cfdcc0dbaa0, type: 3}
+  headshot: {fileID: -7607820430976521780, guid: d989b0d732b748542b34228ef8efeeec, type: 3}

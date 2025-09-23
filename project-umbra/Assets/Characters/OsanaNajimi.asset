@@ -42,3 +42,4 @@ MonoBehaviour:
   chosenJob: {fileID: 0}
   specialCharacteristic: Jack Of All Trade
   characterSprite: {fileID: -3400263231217397214, guid: a7620ae4292bdcd4a9a9876e03e23ac2, type: 3}
+  headshot: {fileID: -3400263231217397214, guid: 9ebc26bfb42be384face68d5d6916dff, type: 3}
