@@ -419,6 +419,7 @@ MonoBehaviour:
   zoomSpeed: 2
   minZoom: 3
   maxZoom: 15
+  isUIOpen: 0
 --- !u!4 &374411388
 Transform:
   m_ObjectHideFlags: 0
@@ -4471,6 +4472,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   scrollMenuUI: {fileID: 2144076598}
+  uiOpen: {fileID: 374411387}
   cityName: 
 --- !u!4 &2133055669
 Transform:
