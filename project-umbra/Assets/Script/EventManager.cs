@@ -14,6 +14,8 @@ public class EventManager : MonoBehaviour
     public TextMeshProUGUI judulEvent;
     public TextMeshProUGUI deskripsiEvent;
     public TimeManager timeManager;
+    [SerializeField] private string[] possibleLocations;
+
 
     void OnEnable()
     {
@@ -40,7 +42,7 @@ public class EventManager : MonoBehaviour
             if (GameManager.Instance.nextSpawnEvent != null && GameManager.Instance.nextSpawnEvent.character != null)
             {
                 var pending = GameManager.Instance.nextSpawnEvent;
-                ChosenSpawn(pending.character, pending.cityName);
+                ChosenSpawn(pending.character);
                 GameManager.Instance.nextSpawnEvent = null;
             }
             else
@@ -148,7 +150,7 @@ public class EventManager : MonoBehaviour
         return winChance;
     }
 
-    public void ChosenSpawn(CharacterInstance character, string cityName)
+    public void ChosenSpawn(CharacterInstance character)
     {
         var spawnEvents = allEvents.Where(e => e.jenisEvent == EventType.Spawn).ToList();
         float totalWeight = 0;
@@ -179,13 +181,13 @@ public class EventManager : MonoBehaviour
 
         if (chosenEvent != null)
         {
+            string chosenCity = chosenEvent.spawnLocation;
             eventPanel.SetActive(true);
             judulEvent.text = chosenEvent.namaEvent;
             deskripsiEvent.text = chosenEvent.winDescription;
 
-            GameManager.Instance.cityManager.AddCharacterToCity(cityName, character);
-            Debug.Log($"Spawn event {chosenEvent.IDEvent} triggered for {character.Name}");
+            GameManager.Instance.cityManager.AddCharacterToCity(chosenCity, character);
+            Debug.Log($"Spawn event {chosenEvent.IDEvent} triggered for {character.Name} in {chosenCity}");
         }
-
     }
 }

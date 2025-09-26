@@ -47,3 +47,4 @@ MonoBehaviour:
   chosenJob: {fileID: 0}
   specialCharacteristic: All Brawn No Brain
   characterSprite: {fileID: 7439344015361158308, guid: 5a1341d6d8b05a045975b56f308aa8b7, type: 3}
+  headshot: {fileID: 7439344015361158308, guid: 2f61850411415444c9868cb51bc2e652, type: 3}

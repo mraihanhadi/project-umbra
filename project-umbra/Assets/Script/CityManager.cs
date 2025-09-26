@@ -1,6 +1,9 @@
 using System.Collections.Generic;
+using System.Linq;
+using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 [System.Serializable]
 public class CityData
@@ -17,6 +20,8 @@ public class CityManager : MonoBehaviour
     private string clcikedCity;
     public Sprite[] cityImage;
     public GameObject city;
+    public GameObject chosenList;
+    public GameObject chosenContent;
     public SpriteRenderer currentCityImg;
     void OnEnable()
     {
@@ -31,6 +36,8 @@ public class CityManager : MonoBehaviour
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
         GameObject foundCity = GameObject.Find("City");
+        var allObjs = Resources.FindObjectsOfTypeAll<GameObject>();
+        GameObject foundList = allObjs.FirstOrDefault(go => go.name == "ChosenList");
         if (foundCity != null)
         {
             city = foundCity;
@@ -41,6 +48,15 @@ public class CityManager : MonoBehaviour
         {
             Debug.LogWarning("Map Not Found");
             city = null;
+        }
+        if (foundList != null)
+        {
+            chosenList = foundList;
+            UpdateList();
+        }
+        else
+        {
+            Debug.LogWarning("Chosen List not found");
         }
     }
 
@@ -81,6 +97,49 @@ public class CityManager : MonoBehaviour
             return;
         }
         cityData.residents.Add(character);
+        character.SetCurrentLocation(cityName);
         Debug.Log($"Character {character.Name} added to {cityData.cityName}");
+    }
+
+    public void UpdateList()
+    {
+        Transform contentParent = Resources.FindObjectsOfTypeAll<Transform>()
+            .FirstOrDefault(t => t.name == "Content");
+        if (contentParent == null)
+        {
+            Debug.LogWarning("Content container not found!");
+            return;
+        }
+
+        foreach (Transform child in contentParent)
+        {
+            Destroy(child.gameObject);
+        }
+
+        var characters = GameManager.Instance.characterManager.sentChosenInstance;
+
+        foreach (var ch in characters)
+        {
+            GameObject entry = Instantiate(chosenContent, contentParent);
+            entry.transform.localScale = Vector3.one;
+
+            var headshotImg = entry.transform.Find("Headshot")?.GetComponent<Image>();
+            var nameText    = entry.transform.Find("Name")?.GetComponent<TextMeshProUGUI>();
+            var locText     = entry.transform.Find("Location")?.GetComponent<TextMeshProUGUI>();
+            var viewBtn     = entry.transform.Find("View")?.GetComponent<Button>();
+
+            if (headshotImg != null) headshotImg.sprite = ch.Headshot;
+            if (nameText != null)    nameText.text = ch.Name;
+            if (locText != null)     locText.text = ch.CurrentLocation;
+
+            if (viewBtn != null)
+            {
+                viewBtn.onClick.RemoveAllListeners();
+                viewBtn.onClick.AddListener(() =>
+                {
+                    Debug.Log($"View {ch.Name} in {ch.CurrentLocation}");
+                });
+            }
+        }
     }
 }

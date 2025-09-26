@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public enum JobConditionType
@@ -48,4 +49,5 @@ public class CharacterData : ScriptableObject
     public JobData chosenJob;
     public string specialCharacteristic;
     public Sprite characterSprite;
+    public Sprite headshot;
 }

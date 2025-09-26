@@ -543,9 +543,9 @@ MonoBehaviour:
   characterPrefab: {fileID: 1841286534227738290, guid: 4b6b33e6f6a8650468599fde49323d8e, type: 3}
   rarityChances:
   - rarity: 0
-    chance: 100
+    chance: 80
   - rarity: 1
-    chance: 100
+    chance: 20
   profileUI: {fileID: 906413662}
   profileScript: {fileID: 1074284316}
 --- !u!4 &1066239474
