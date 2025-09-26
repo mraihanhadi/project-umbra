@@ -47,3 +47,4 @@ MonoBehaviour:
   chosenJob: {fileID: 0}
   specialCharacteristic: God Complex
   characterSprite: {fileID: 495456059651229704, guid: f0d11c3de3252614bb029feb21bbc97c, type: 3}
+  headshot: {fileID: 495456059651229704, guid: 5b5b0e1e986f0684e8e6105a79c57336, type: 3}

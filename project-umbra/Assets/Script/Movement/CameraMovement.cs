@@ -1,4 +1,5 @@
 using Cinemachine;
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class CameraMovement : MonoBehaviour
@@ -13,9 +14,11 @@ public class CameraMovement : MonoBehaviour
     public float zoomSpeed = 2f;
     public float minZoom = 3f;
     public float maxZoom = 15f;
+    public bool isUIOpen = false;
 
     void Update()
     {
+        if (isUIOpen) return;
         HandlePan();
         HandleDrag();
         HandleZoom();
@@ -54,5 +57,10 @@ public class CameraMovement : MonoBehaviour
             float newSize = Mathf.Clamp(currentSize - scroll * zoomSpeed, minZoom, maxZoom);
             virtualCam.m_Lens.OrthographicSize = newSize;
         }
+    }
+
+    public void SetUIOpen(bool state)
+    {
+        isUIOpen = state;
     }
 }

@@ -67,3 +67,4 @@ MonoBehaviour:
   chosenJob: {fileID: 0}
   specialCharacteristic: Black Widow
   characterSprite: {fileID: -4925832402046526473, guid: d8605ad06ea57254a8e39f92da0da21d, type: 3}
+  headshot: {fileID: -4925832402046526473, guid: 2db24cc986c7098428118f1b76c01c10, type: 3}
