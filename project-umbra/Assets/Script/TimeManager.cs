@@ -5,7 +5,8 @@ using UnityEngine.SceneManagement;
 [SerializeField]
 public class TimeManager : MonoBehaviour
 {
-    public TextMeshProUGUI timeUIText;
+    public TextMeshProUGUI sunUIText;
+    public TextMeshProUGUI moonUIText;
     public bool isPaused;
     public float moonsPerSun = 12f;
     public float moonInterval = 12f;
@@ -31,16 +32,19 @@ public class TimeManager : MonoBehaviour
 
     void OnSceneLoaded(Scene scene, LoadSceneMode mode)
     {
-        GameObject foundUI = GameObject.Find("TimeText");
-        if (foundUI != null)
+        GameObject foundUISun = GameObject.Find("Suns");
+        GameObject foundUIMoon = GameObject.Find("Moons");
+        if (foundUISun != null && foundUIMoon != null)
         {
-            timeUIText = foundUI.GetComponent<TextMeshProUGUI>();
+            sunUIText = foundUISun.GetComponent<TextMeshProUGUI>();
+            moonUIText = foundUIMoon.GetComponent<TextMeshProUGUI>();
             UpdateTimeUI();
         }
         else
         {
             Debug.LogWarning("Time UI not found in this scene!");
-            timeUIText = null;
+            sunUIText = null;
+            moonUIText = null;
         }
     }
 
@@ -66,9 +70,10 @@ public class TimeManager : MonoBehaviour
 
     void UpdateTimeUI()
     {
-        if (timeUIText != null)
+        if (sunUIText != null && moonUIText != null)
         {
-            timeUIText.text = $"{suns} Suns {moons} Moons";
+            sunUIText.text = $"{suns} Suns";
+            moonUIText.text = $"{moons} Moons";
         }
     }
 

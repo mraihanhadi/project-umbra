@@ -7,9 +7,7 @@ using System.Security.Cryptography.X509Certificates;
 
 public class MainViewManager : MonoBehaviour
 {
-    public GameObject menu;
     public GameObject mainView;
-    public GameObject eventPanel;
     public Button dunia1Btn;
     public Button dunia2Btn;
     public RectTransform dunia1;
@@ -19,113 +17,15 @@ public class MainViewManager : MonoBehaviour
     public Button goBackBtn;
     public Image visitImg;
     public Image goBackImg;
-    public GameObject debugPanel;
-
-    GameObject menuBtn;
-    GameObject saveMenu;
-    GameObject loadMenu;
-    GameObject settingsMenu;
     private float dunia1Origin;
     private float dunia2Origin;
     private bool isDunia1;
     private const float transitionTime = .75f;
     void Start()
     {
-        menuBtn = menu.transform.Find("MenuBtn").gameObject;
-        saveMenu = menu.transform.Find("SaveMenu").gameObject;
-        loadMenu = menu.transform.Find("LoadMenu").gameObject;
-        settingsMenu = menu.transform.Find("SettingsMenu").gameObject;
-        menuBtn.SetActive(true);
-        saveMenu.SetActive(false);
-        loadMenu.SetActive(false);
-        settingsMenu.SetActive(false);
-        mainView.SetActive(true);
-        menu.SetActive(false);
         dunia1Origin = dunia1.anchoredPosition.x;
         dunia2Origin = dunia2.anchoredPosition.x;
     }
-
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Escape))
-        {
-            if (!menu.activeInHierarchy) //Jika menu tidak aktif
-            {
-                OpenMenu();
-            }
-            else
-            {
-                if (!menuBtn.activeInHierarchy)
-                {
-                    Debug.Log(55);
-                    BackToMenu();
-                }
-                else
-                {
-                    CloseMenu();
-                }
-            }
-        }
-
-        if (Input.GetKeyDown(KeyCode.F7))
-        {
-            if (!debugPanel.activeInHierarchy)
-            {
-                OpenDebugPanel();
-            }
-        }
-    }
-
-    public void OpenMenu()
-    {
-        mainView.SetActive(false);
-        menu.SetActive(true);
-        GameManager.Instance.timeManager.PauseTime();
-    }
-
-    public void CloseMenu()
-    {
-        mainView.SetActive(true);
-        menu.SetActive(false);
-        GameManager.Instance.timeManager.ResumeTime();
-    }
-
-    void BackToMenu()
-    {
-        saveMenu.SetActive(false);
-        loadMenu.SetActive(false);
-        settingsMenu.SetActive(false);
-        mainView.SetActive(false);
-        menuBtn.SetActive(true);
-    }
-
-    public void OpenSaveMenu()
-    {
-        menuBtn.SetActive(false);
-        saveMenu.SetActive(true);
-        mainView.SetActive(true);
-    }
-
-    public void OpenLoadMenu()
-    {
-        menuBtn.SetActive(false);
-        loadMenu.SetActive(true);
-        mainView.SetActive(true);
-    }
-
-    public void OpenSettingsMenu()
-    {
-        menuBtn.SetActive(false);
-        settingsMenu.SetActive(true);
-        mainView.SetActive(true);
-    }
-
-    public void CloseEvent()
-    {
-        eventPanel.SetActive(false);
-        GameManager.Instance.timeManager.ResumeTime();
-    }
-
     public void VisitWorld()
     {
         GameManager.Instance.timeManager.PauseTime();
@@ -213,19 +113,8 @@ public class MainViewManager : MonoBehaviour
         dunia1Btn.interactable = true;
         dunia2Btn.interactable = true;
     }
-
-    public void OpenDebugPanel()
+    public void SetActiveMainView(bool value)
     {
-        debugPanel.SetActive(true);
-    }
-
-    public void Debug1()
-    {
-        GameManager.Instance.currencyManager.IncreaseDivinePower(999);
-    }
-
-    public void CloseDebugPanel()
-    {
-        debugPanel.SetActive(false);
+        mainView.SetActive(value);
     }
 }
