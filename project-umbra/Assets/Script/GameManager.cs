@@ -1,5 +1,6 @@
 using JetBrains.Annotations;
 using UnityEngine;
+using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
 
 [System.Serializable]
@@ -25,6 +26,9 @@ public class GameManager : MonoBehaviour
     public GameObject eventPanel;
     public MainViewManager findMainViewManager;
     public MainViewManager mainViewManager;
+    public GameObject scrollMenuUI;
+    public CameraMovement uiOpen;
+    GameObject opener;
     [SerializeField]
     GameObject menuBtn;
     [SerializeField]
@@ -173,5 +177,15 @@ public class GameManager : MonoBehaviour
     {
         eventPanel.SetActive(false);
         GameManager.Instance.timeManager.ResumeTime();
+    }
+
+    public void OpenScrollMenuUI()
+    {
+        scrollMenuUI.SetActive(true);
+    }
+
+    public void CloseScrollMenuUI()
+    {
+        scrollMenuUI.SetActive(false);
     }
 }
