@@ -124,13 +124,13 @@ public class CityManager : MonoBehaviour
             entry.transform.localScale = Vector3.one;
 
             var headshotImg = entry.transform.Find("Headshot")?.GetComponent<Image>();
-            var nameText    = entry.transform.Find("Name")?.GetComponent<TextMeshProUGUI>();
-            var locText     = entry.transform.Find("Location")?.GetComponent<TextMeshProUGUI>();
-            var viewBtn     = entry.transform.Find("View")?.GetComponent<Button>();
+            var nameText = entry.transform.Find("Name")?.GetComponent<TextMeshProUGUI>();
+            var locText = entry.transform.Find("Location")?.GetComponent<TextMeshProUGUI>();
+            var viewBtn = entry.transform.Find("View")?.GetComponent<Button>();
 
             if (headshotImg != null) headshotImg.sprite = ch.Headshot;
-            if (nameText != null)    nameText.text = ch.Name;
-            if (locText != null)     locText.text = ch.CurrentLocation;
+            if (nameText != null) nameText.text = ch.Name;
+            if (locText != null) locText.text = ch.CurrentLocation;
 
             if (viewBtn != null)
             {

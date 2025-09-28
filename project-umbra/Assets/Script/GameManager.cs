@@ -1,4 +1,5 @@
 using JetBrains.Annotations;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
@@ -185,6 +186,16 @@ public class GameManager : MonoBehaviour
     }
 
     public void CloseScrollMenuUI()
+    {
+        scrollMenuUI.SetActive(false);
+    }
+
+    public void OpenLogMenuUI()
+    {
+        scrollMenuUI.SetActive(true);
+    }
+
+    public void CloseLogMenuUI()
     {
         scrollMenuUI.SetActive(false);
     }
