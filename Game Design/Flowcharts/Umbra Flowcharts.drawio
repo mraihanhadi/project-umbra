@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 OPR/121.0.0.0" version="28.2.5" pages="4">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/137.0.0.0 Safari/537.36 OPR/121.0.0.0" version="28.2.5" pages="5">
   <diagram name="Start Game Chart" id="USsAvYq31VtU2phimjOu">
     <mxGraphModel dx="2024" dy="1161" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -1371,6 +1371,154 @@
         </mxCell>
         <mxCell id="YZPkI6bPTdAOJLAbl7R_-82" value="Yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
           <mxGeometry x="210" y="908" width="40" height="30" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="W4GpTIxKm4qy2q5UDmPF" name="Chosen Chart">
+    <mxGraphModel dx="2024" dy="1161" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aWQOCPaQgrLDHsSuSp73-2" target="aWQOCPaQgrLDHsSuSp73-5">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="404" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-2" value="Start" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.start_1;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="50" y="150" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-3" value="&lt;font style=&quot;font-size: 24px;&quot;&gt;Chosen Chart&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="30" y="80" width="170" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-4" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aWQOCPaQgrLDHsSuSp73-5" target="aWQOCPaQgrLDHsSuSp73-7">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="410" y="180.0000000000001" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-5" value="Generate Chosen Stats" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="220" y="130" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-6" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="aWQOCPaQgrLDHsSuSp73-7" target="aWQOCPaQgrLDHsSuSp73-10">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="420" y="290" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-7" value="Spawn Chosen with their own Respective Spawn Rate" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="1">
+          <mxGeometry x="370" y="135" width="100" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-8" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0;exitY=0.5;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="aWQOCPaQgrLDHsSuSp73-10" target="aWQOCPaQgrLDHsSuSp73-11">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150.00000000000023" y="420" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.25;entryDx=0;entryDy=0;" edge="1" parent="1" source="aWQOCPaQgrLDHsSuSp73-10" target="aWQOCPaQgrLDHsSuSp73-24">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="460" y="620.0344827586207" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="420" y="620" />
+              <mxPoint x="470" y="620" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-10" value="Chosen" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="1">
+          <mxGeometry x="370" y="250" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-11" value="Profile Mechanic" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="400" width="310" height="260" as="geometry" />
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-12" value="Read Chosen Lore and Status" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="aWQOCPaQgrLDHsSuSp73-11">
+          <mxGeometry x="220" y="40" width="70" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-13" value="Display Profile UI and Chosen Profile" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" vertex="1" parent="aWQOCPaQgrLDHsSuSp73-11">
+          <mxGeometry x="70" y="50" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="aWQOCPaQgrLDHsSuSp73-11" source="aWQOCPaQgrLDHsSuSp73-12" target="aWQOCPaQgrLDHsSuSp73-13">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="170" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-15" value="Transfer?" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.decision;whiteSpace=wrap;" vertex="1" parent="aWQOCPaQgrLDHsSuSp73-11">
+          <mxGeometry x="70" y="140" width="100" height="100" as="geometry" />
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="aWQOCPaQgrLDHsSuSp73-11" source="aWQOCPaQgrLDHsSuSp73-13" target="aWQOCPaQgrLDHsSuSp73-15">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="120" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-17" value="Got Clicked at" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="220" y="278" width="100" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-18" value="Transfer Mechanic" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="360" width="260" height="180" as="geometry" />
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-19" value="Move Chosen into Selected Marble Database" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="aWQOCPaQgrLDHsSuSp73-18">
+          <mxGeometry x="20" y="40" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-20" value="Trigger Chosen Spawn Event" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="aWQOCPaQgrLDHsSuSp73-18">
+          <mxGeometry x="150" y="40" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="aWQOCPaQgrLDHsSuSp73-18" source="aWQOCPaQgrLDHsSuSp73-19" target="aWQOCPaQgrLDHsSuSp73-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="150" y="80" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-22" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.067;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="aWQOCPaQgrLDHsSuSp73-15" target="aWQOCPaQgrLDHsSuSp73-18">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="400" y="460" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="410" y="590" />
+              <mxPoint x="410" y="380" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-23" value="Yes" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="300" y="568" width="40" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-24" value="Curse And Blessing Mechanic" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="470" y="568" width="340" height="262" as="geometry" />
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-25" value="Read Chosen Lore and Status" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="aWQOCPaQgrLDHsSuSp73-24">
+          <mxGeometry x="20" y="40" width="60" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-26" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="aWQOCPaQgrLDHsSuSp73-24" source="aWQOCPaQgrLDHsSuSp73-27" target="aWQOCPaQgrLDHsSuSp73-29">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-27" value="Display Profile UI and Chosen Profile" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.display;whiteSpace=wrap;" vertex="1" parent="aWQOCPaQgrLDHsSuSp73-24">
+          <mxGeometry x="105" y="45" width="100" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-28" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="aWQOCPaQgrLDHsSuSp73-24" source="aWQOCPaQgrLDHsSuSp73-25" target="aWQOCPaQgrLDHsSuSp73-27">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-29" value="Bless/Curse" style="rhombus;whiteSpace=wrap;html=1;strokeWidth=2;" vertex="1" parent="aWQOCPaQgrLDHsSuSp73-24">
+          <mxGeometry x="250" y="35" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-30" value="Display Curse/Blessing List UI" style="rounded=1;whiteSpace=wrap;html=1;absoluteArcSize=1;arcSize=14;strokeWidth=2;" vertex="1" parent="aWQOCPaQgrLDHsSuSp73-24">
+          <mxGeometry x="250" y="162" width="80" height="78" as="geometry" />
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-31" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="aWQOCPaQgrLDHsSuSp73-24" source="aWQOCPaQgrLDHsSuSp73-29" target="aWQOCPaQgrLDHsSuSp73-30">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="290" y="162" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-32" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="aWQOCPaQgrLDHsSuSp73-24" source="aWQOCPaQgrLDHsSuSp73-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="80" y="200" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-33" value="Choose Blessing/Curse" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="aWQOCPaQgrLDHsSuSp73-24">
+          <mxGeometry x="130" y="160" width="80" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-34" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="aWQOCPaQgrLDHsSuSp73-24" source="aWQOCPaQgrLDHsSuSp73-30" target="aWQOCPaQgrLDHsSuSp73-33">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="200" y="201" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-35" value="Update Chosen Status" style="strokeWidth=2;html=1;shape=mxgraph.flowchart.database;whiteSpace=wrap;" vertex="1" parent="aWQOCPaQgrLDHsSuSp73-24">
+          <mxGeometry x="20" y="160" width="60" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="aWQOCPaQgrLDHsSuSp73-36" value="Got Clicked at after transfer" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fillColor=none;" vertex="1" parent="1">
+          <mxGeometry x="285" y="350" width="170" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
