@@ -3,10 +3,14 @@ using TMPro;
 
 public class DebugLogPanel : MonoBehaviour
 {
-    public TextMeshProUGUI logText;  // assign in Inspector
+    public TextMeshProUGUI logText;
     private string logHistory = "";
 
     public GameObject debugPanel;
+    public void Start()
+    {
+        debugPanel.SetActive(false);
+    }
     public void TogglePanel()
     {
         debugPanel.SetActive(!debugPanel.activeSelf);
