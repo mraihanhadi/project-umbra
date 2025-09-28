@@ -63,7 +63,7 @@ public class CityManager : MonoBehaviour
     void UpdateCity()
     {
         currentCityImg.sprite = FindSprite(clcikedCity);
-        if (currentCityImg.sprite != null)
+        if (currentCityImg.sprite == null)
         {
             Debug.Log("Tidak Ada Sprite");
         }
@@ -76,7 +76,7 @@ public class CityManager : MonoBehaviour
 
     Sprite FindSprite(string name)
     {
-        string target = name.Replace(" ", "").ToLower() + "_0";
+        string target = name.Replace(" ", "").ToLower();
         foreach (var sprite in cityImage)
         {
             if (sprite != null && sprite.name.Replace(" ", "").ToLower() == target)
