@@ -49,7 +49,7 @@ Tim Kami Beranggotakan:
 GDD Project Umbra:
 https://docs.google.com/document/d/1NIcN1gOx7C6TWSbxZ5K3Y_SGlQgbLMlgy1HwD-zYjOk/edit?usp=sharing
 
-V2:
+>V2:
 https://www.notion.so/Project-Umbra-GDD-v2-23ead9b7c0ff8006a8f3e127f3a16d54?source=copy_link
 
 >Whiteboard Brainstorm:|
@@ -66,6 +66,9 @@ https://docs.google.com/spreadsheets/d/1aNgf7Q_IKgR7KDGAHWMj9h0qyoi9KEHV2-Zs9mMJ
 
 >Asset Google Drive:
 https://drive.google.com/drive/folders/1O_DZtbTCbaLrfrzk6oXvNR0amy3cFkuC
+
+>Music And Sound:
+https://drive.google.com/drive/folders/1Z0bWl8G2cNp44i0UvAks9uoUQP940ZfA?usp=sharing
 
 ---
 
