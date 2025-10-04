@@ -63,3 +63,7 @@ MonoBehaviour:
   specialCharacteristic: True Chosen
   characterSprite: {fileID: 1550746193010043188, guid: 0677090dfa28b434d90b84473369777d, type: 3}
   headshot: {fileID: 1550746193010043188, guid: 9ba7c9ade61b34b419087100b36217a6, type: 3}
+  lore: Setori is the type of man who approaches his work as a deliveryman with varying
+    degrees of seriousness.  He believes that balance is key in life. On a ""good""
+    day, he will stick to all traffic laws, on a ""bad"" day,  he may break them
+    simply because he is feeling bad. To be honest, he's a rather unusual individual.

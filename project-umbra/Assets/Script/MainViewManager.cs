@@ -54,10 +54,10 @@ public class MainViewManager : MonoBehaviour
         seq.Append(dunia1.DOSizeDelta(new Vector2(400f, 80f), transitionTime).SetEase(Ease.InOutQuart));
         namaPlanet.text = "EARTH";
         seq.Append(namaPlanet.DOFade(1f, 1f));
-        seq.Append(visitImg.DOFade(1f, 1f));
-        seq.Append(goBackImg.DOFade(1f, 1f));
         seq.OnComplete(() =>
         {
+            seq.Append(visitImg.DOFade(1f, 1f));
+            seq.Append(goBackImg.DOFade(1f, 1f));
             visitBtn.interactable = true;
             goBackBtn.interactable = true;
         });
@@ -73,10 +73,10 @@ public class MainViewManager : MonoBehaviour
         seq.Append(dunia2.DOSizeDelta(new Vector2(400f, 80f), transitionTime).SetEase(Ease.InOutQuart));
         namaPlanet.text = "THE MYTHTERRA";
         seq.Append(namaPlanet.DOFade(1f, 1f));
-        seq.Append(visitImg.DOFade(1f, 1f));
-        seq.Append(goBackImg.DOFade(1f, 1f));
         seq.OnComplete(() =>
         {
+            seq.Append(visitImg.DOFade(1f, 1f));
+            seq.Append(goBackImg.DOFade(1f, 1f));
             visitBtn.interactable = true;
             goBackBtn.interactable = true;
         });

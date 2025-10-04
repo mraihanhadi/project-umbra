@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: aurellia kingsom
+      name: aurellia kingdom
       rect:
         serializedVersion: 2
         x: 0
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      aurellia kingsom: 8598363045473522712
+      aurellia kingdom: 8598363045473522712
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

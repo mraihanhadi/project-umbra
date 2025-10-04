@@ -48,3 +48,9 @@ MonoBehaviour:
   specialCharacteristic: God Complex
   characterSprite: {fileID: 495456059651229704, guid: f0d11c3de3252614bb029feb21bbc97c, type: 3}
   headshot: {fileID: 495456059651229704, guid: 5b5b0e1e986f0684e8e6105a79c57336, type: 3}
+  lore: Ayanto no longer pretends to be moral. Raised in an environment of violence
+    and corruption,  he took the lessons learned in his native nation, that wealth
+    is more than just power to the correct conclusion.  By portraying himself as
+    a living prophet who can channel the will of something much greater,  an invisible
+    truth that speaks through the language of gold, debt, and desire,  he commands
+    a passionate following that worships wealth as a sacred force.

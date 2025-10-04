@@ -1,7 +1,5 @@
 using System.Collections.Generic;
-using UnityEditor.Rendering;
 using UnityEngine;
-using UnityEngine.EventSystems;
 
 [System.Serializable]
 public class CharacterInstance
@@ -35,6 +33,7 @@ public class CharacterInstance
     public string CurrentLocation => currentLocation;
     public List<string> triggeredEventIDs = new List<string>();
     public JobData assignedJob;
+    public string Lore => baseData.lore;
     public void SetCurrentLocation(string location)
     {
         currentLocation = location;

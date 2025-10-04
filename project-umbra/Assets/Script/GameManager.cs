@@ -1,8 +1,7 @@
-using JetBrains.Annotations;
-using Unity.VisualScripting;
+using TMPro;
 using UnityEngine;
-using UnityEngine.EventSystems;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 [System.Serializable]
 public class PendingEvent
@@ -29,6 +28,12 @@ public class GameManager : MonoBehaviour
     public MainViewManager mainViewManager;
     public GameObject scrollMenuUI;
     public CameraMovement uiOpen;
+    public GameObject profileUI;
+    public TextMeshProUGUI informationText;
+    public Image npcImage;
+    public TextMeshProUGUI lore;
+    public bool isHiddenUI;
+    public TextMeshProUGUI hideTextUI;
     GameObject opener;
     [SerializeField]
     GameObject menuBtn;
@@ -47,6 +52,8 @@ public class GameManager : MonoBehaviour
         settingsMenu.SetActive(false);
         mainView.SetActive(true);
         menu.SetActive(false);
+        isHiddenUI = false;
+        hideTextUI.text = "Hide UI";
     }
     void Update()
     {
@@ -112,6 +119,7 @@ public class GameManager : MonoBehaviour
     }
     public void OpenDebugPanel()
     {
+        timeManager.PauseTime();
         debugPanel.SetActive(true);
     }
     public void Debug1()
@@ -120,6 +128,7 @@ public class GameManager : MonoBehaviour
     }
     public void CloseDebugPanel()
     {
+        timeManager.ResumeTime();
         debugPanel.SetActive(false);
     }
     public void OpenMenu()
@@ -130,7 +139,7 @@ public class GameManager : MonoBehaviour
         }
         mainView.SetActive(false);
         menu.SetActive(true);
-        GameManager.Instance.timeManager.PauseTime();
+        timeManager.PauseTime();
     }
 
     public void CloseMenu()
@@ -141,7 +150,7 @@ public class GameManager : MonoBehaviour
         }
         mainView.SetActive(true);
         menu.SetActive(false);
-        GameManager.Instance.timeManager.ResumeTime();
+        timeManager.ResumeTime();
     }
 
     void BackToMenu()
@@ -177,26 +186,76 @@ public class GameManager : MonoBehaviour
     public void CloseEvent()
     {
         eventPanel.SetActive(false);
-        GameManager.Instance.timeManager.ResumeTime();
+        timeManager.ResumeTime();
     }
 
     public void OpenScrollMenuUI()
     {
         scrollMenuUI.SetActive(true);
+        timeManager.PauseTime();
     }
 
     public void CloseScrollMenuUI()
     {
         scrollMenuUI.SetActive(false);
+        timeManager.ResumeTime();
     }
 
     public void OpenLogMenuUI()
     {
         scrollMenuUI.SetActive(true);
+        timeManager.PauseTime();
     }
 
     public void CloseLogMenuUI()
     {
         scrollMenuUI.SetActive(false);
+        timeManager.PauseTime();
+    }
+
+    public void ExitGame()
+    {
+        Application.Quit();
+    }
+
+    public void ViewChosenStats(CharacterInstance data)
+    {
+        timeManager.PauseTime();
+        profileUI.SetActive(true);
+        scrollMenuUI.SetActive(false);
+        npcImage.sprite = data.Sprite;
+        informationText.text =
+            $"Name: {data.Name}\n" +
+            $"Gender: {data.Gender}\n" +
+            $"Type: {data.Rarity}\n" +
+            $"Alignment: {data.alignment}\n" +
+            $"Intelligence: {data.intelligence:F0}\n" +
+            $"Strength: {data.strength:F0}\n" +
+            $"Charm: {data.charm:F0}\n" +
+            $"Luck: {data.luck:F0}\n";
+        lore.text = data.Lore;
+    }
+
+    public void CloseChosenStats()
+    {
+        timeManager.ResumeTime();
+        profileUI.SetActive(false);
+        scrollMenuUI.SetActive(true);
+    }
+
+    public void HideUI()
+    {
+        if (!isHiddenUI)
+        {
+            mainView.SetActive(false);
+            hideTextUI.text = "Show UI";
+            isHiddenUI = true;
+        }
+        else
+        {
+            mainView.SetActive(true);
+            hideTextUI.text = "Hide UI";
+            isHiddenUI = false;
+        }
     }
 }

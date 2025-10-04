@@ -100,7 +100,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: old castle maltheron
+      name: MaltheronOldCastle
       rect:
         serializedVersion: 2
         x: 0
@@ -135,7 +135,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      old castle maltheron: 5268059805313192232
+      MaltheronOldCastle: 5268059805313192232
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

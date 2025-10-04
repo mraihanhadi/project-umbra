@@ -7,6 +7,7 @@ public class EarthManager : MonoBehaviour
 {
     public Image npcImage;
     public TextMeshProUGUI infoText;
+    public TextMeshProUGUI lore;
     public int divinePowerCost = 100;
     private CharacterInstance currentInstance;
     private GameManager gameManagerInstance;
@@ -28,8 +29,9 @@ public class EarthManager : MonoBehaviour
             $"Intelligence: {character.intelligence:F0}\n" +
             $"Strength: {character.strength:F0}\n" +
             $"Charm: {character.charm:F0}\n" +
-            $"Luck: {character.luck:F0}\n" +
-            $"Special Characteristic: {character.Special}";
+            $"Luck: {character.luck:F0}\n";
+        lore.text = $"{character.Lore}";
+        GameManager.Instance.mainView.SetActive(false);
     }
 
     public void SendCharacter()
@@ -47,7 +49,8 @@ public class EarthManager : MonoBehaviour
                 GameManager.Instance.nextSpawnEvent = new PendingEvent{character = currentInstance};
                 Debug.Log($"Sent character: {currentInstance} to CharacterManager");
             }
-            SceneManager.LoadSceneAsync(1);
+            GameManager.Instance.mainView.SetActive(true);
+            SceneManager.LoadSceneAsync("Main_View");
         }
         else
         {
@@ -57,7 +60,8 @@ public class EarthManager : MonoBehaviour
 
     public void GoBack()
     {
+        GameManager.Instance.mainView.SetActive(true);
         GameManager.Instance.timeManager.isPaused = false;
-        SceneManager.LoadSceneAsync(1);
+        SceneManager.LoadSceneAsync("Main_View");
     }
 }

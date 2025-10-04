@@ -50,4 +50,5 @@ public class CharacterData : ScriptableObject
     public string specialCharacteristic;
     public Sprite characterSprite;
     public Sprite headshot;
+    public string lore;
 }

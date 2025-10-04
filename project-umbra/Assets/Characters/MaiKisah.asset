@@ -63,3 +63,9 @@ MonoBehaviour:
   specialCharacteristic: Black Widow
   characterSprite: {fileID: 3460207762087898781, guid: 437c5e1596ef6e04495e635c9cea1a96, type: 3}
   headshot: {fileID: 3460207762087898781, guid: 64a86100ed45e0e49873cf0c05213e2d, type: 3}
+  lore: Chinatown's Madame Mai sells mystery by the minute, including fortune charms,
+    face readings,  and ""ancient"" wisdom, all wrapped in silk and incense. It's
+    all an act, but one that is profitable.  She simply knows how to read people,
+    she doesn't believe a word of it. She keeps the hopeful interested  and the money
+    coming in with her charm, theatrics, and just the right amount of mystery.  It's
+    just business, nothing spiritual.

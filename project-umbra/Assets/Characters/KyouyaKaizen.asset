@@ -48,3 +48,9 @@ MonoBehaviour:
   specialCharacteristic: All Brawn No Brain
   characterSprite: {fileID: 7439344015361158308, guid: 5a1341d6d8b05a045975b56f308aa8b7, type: 3}
   headshot: {fileID: 7439344015361158308, guid: 2f61850411415444c9868cb51bc2e652, type: 3}
+  lore: Kyouya is part of a mercenary group that a war-torn country has hired. He
+    frequently acts as the  team's pointman or heavy weapons specialist due to his
+    impressive physical strength and solid background in several martial arts. He
+    has peculiarities, though, and most people  find it difficult to understand him
+    because of his caveman-like speech. In spite of this,  Kyouya closely follows
+    the rules of engagement and is incredibly devoted to his allies.

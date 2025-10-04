@@ -48,3 +48,7 @@ MonoBehaviour:
   specialCharacteristic: True Chosen
   characterSprite: {fileID: 1621373928555129994, guid: 7ee61e3ec66e82a409db7255de2ed490, type: 3}
   headshot: {fileID: 1621373928555129994, guid: 475c11360be1ec14abca7b7c7f77c6fe, type: 3}
+  lore: Initially a chore, helping out eventually turned into his favorite part of
+    the day.  Since he had been helping his mother with the dishes since he was a
+    teenager and had already advanced to  head chef by his twenties, Tsumasu found
+    it easy to assume the role of heir to his family's restaurant chain.

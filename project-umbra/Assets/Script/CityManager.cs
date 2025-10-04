@@ -23,6 +23,7 @@ public class CityManager : MonoBehaviour
     public GameObject chosenList;
     public GameObject chosenContent;
     public SpriteRenderer currentCityImg;
+    public Transform contentParent;
     void OnEnable()
     {
         SceneManager.sceneLoaded += OnSceneLoaded;
@@ -103,8 +104,6 @@ public class CityManager : MonoBehaviour
 
     public void UpdateList()
     {
-        Transform contentParent = Resources.FindObjectsOfTypeAll<Transform>()
-            .FirstOrDefault(t => t.name == "Content");
         if (contentParent == null)
         {
             Debug.LogWarning("Content container not found!");
@@ -121,6 +120,7 @@ public class CityManager : MonoBehaviour
         foreach (var ch in characters)
         {
             GameObject entry = Instantiate(chosenContent, contentParent);
+            entry.GetComponent<ChosenList>().SetData(ch);
             entry.transform.localScale = Vector3.one;
 
             var headshotImg = entry.transform.Find("Headshot")?.GetComponent<Image>();

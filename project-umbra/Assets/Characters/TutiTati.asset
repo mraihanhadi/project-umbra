@@ -48,3 +48,8 @@ MonoBehaviour:
   specialCharacteristic: QuickLearner
   characterSprite: {fileID: -7607820430976521780, guid: 04a88be54b54dcf489c28cfdcc0dbaa0, type: 3}
   headshot: {fileID: -7607820430976521780, guid: d989b0d732b748542b34228ef8efeeec, type: 3}
+  lore: She has influenced many laws to serve strong corporate and political interests,
+    frequently with  little consideration for the moral consequences, thanks to her
+    keen intellect and captivating personality.  Throughout her career, Tuti has
+    been a lobbyist focused solely on power and profit, whether  she is working for
+    the oil, tobacco, or weapons industries.

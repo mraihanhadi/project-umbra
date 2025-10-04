@@ -36,17 +36,19 @@ public class CurrencyManager : MonoBehaviour
             currencyText = null;
             faithText = null;
         }
-    }
+    }   
 
     public void IncreaseDivinePower(int amount)
     {
         divinePower += amount;
         UpdateText();
     }
+
     public void DecreaseDivinePower(int amount)
     {
         divinePower -= amount;
     }
+
     public void IncreaseFaith(int amount)
     {
         if (faith + amount > 100)
@@ -59,6 +61,7 @@ public class CurrencyManager : MonoBehaviour
         }
         UpdateText();
     }
+    
     public void DecreaseFaith(int amount)
     {
         if (faith - amount < 0)
@@ -71,6 +74,7 @@ public class CurrencyManager : MonoBehaviour
         }
         UpdateText();
     }
+
     public void UpdateText()
     {
         currencyText.text = FormatNumber(divinePower);
